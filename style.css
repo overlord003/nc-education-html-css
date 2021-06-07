@@ -3,16 +3,35 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
-    /* border: 1px solid red; */
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-}
-
-.header__item {
     border: 1px solid red;
 }
 
+.header__leftcorner {
+    border: 1px solid red;
+}
+
+.header__bar {
+    border: 1px solid red;
+}
+
+.content {
+    border: 1px solid red;
+}
+
+.news {
+    display: flex;
+    border: 1px solid green;
+}
+
+.news__global {
+    border: 1px solid green;
+}
+
+.news__local {
+    border: 1px solid green;
+}
