@@ -1,0 +1,18 @@
+@import url(./normalize.css);
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* border: 1px solid red; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__item {
+    border: 1px solid red;
+}
+
