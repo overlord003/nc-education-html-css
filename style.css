@@ -1,10 +1,14 @@
 @import url(./normalize.css);
+@import url(./images.css);
+@import url(./fonts/inter.css);
 
 .wrapper {
     display: flex;
     flex-direction: column;
 
-    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    position: relative;
+
+    font-family: 'Yandex Sans Text', 'Helvetica Neue', Arial, sans-serif;
 
     border: 1px solid blue;
 }
@@ -12,12 +16,13 @@
 /* header styles start */
 
 .header {
+    margin-right: 240px;
     padding: 0 6px 0 20px;
 
     display: flex;
     justify-content: space-between;
 
-    font-size: .94em;
+    font-size: 14.1px;
     line-height: 42px;
 
     color: #90919d;
@@ -25,39 +30,72 @@
     border: 1px solid red;
 }
 
-.header__leftcorner {
+/* geolocation start */
+
+.geolocation {
     display: flex;
-    align-items: center;
+    flex: .05 1 auto;
+    justify-content: flex-start;
+    align-items: baseline;
 
     border: 1px solid red;
 }
 
-.header__link {
+.geolocation__link {
     padding-right: 16px;
-
     color: currentColor;
 }
 
-.header__link-content {
+.geolocation__link._primary {
     font-weight: 700;
 }
 
-.header__datetime {
+.geolink-icon {
+    display: inline-block;
+    align-self: center;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: -4px;
+    margin-right: 6px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.datetime {
     padding-right: 24px;
 
-    font-size: .93em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13.113px;
     line-height: normal;
 }
 
+/* geolocation end */
+
 .header__bar {
+    padding-left: 12px;
+
+    display: flex;
+    align-items: center;
     border: 1px solid red;
 }
+
+.bar__link {   
+    border: 1px solid red;
+}
+
+.bar__bell {
+    margin-left: 6px;
+    border: 1px solid red;
+}
+
 
 /* header styles end */
 
 /* content styles start */
 
 .content {
+    max-width: 940px;
     margin: auto;
 
     border: 1px solid black;
@@ -69,73 +107,194 @@
 /* new styles start */
 .news {
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
+    /* justify-content: space-between; */
 
     border: 1px solid green;
 }
 
 .news__global {
-    margin: 0 4px 0 20px;
-    border: 1px solid green;
-}
-
-.global-news {
     max-width: 66.6%;
+    margin-right: 20px;
 
+    /* flex: 100 0 auto; */
     display: flex;
     flex-direction: column;
-
+    
     border: 1px solid green;
 }
 
 .tabs {
     display: flex;
-
-    border: 1px solid green;
-}
-
-.tabs__tab {
-    margin-right: 12px;
+    align-items: center;
 
     font-size: 19.05px;
+    font-weight: 500;
     line-height: normal;
 
     border: 1px solid green;
 }
 
-.tabs__link {
+.tabs__title {
+    margin-right: 12px;
+
+    font-size: 15px;
+    line-height: 20.4px;
+    font-weight: 400;
+
+    border: 1px solid green;
+}
+
+.tabs__title:last-of-type {
+    margin-right: 0;
+}
+
+.title__link {
+    color: #0054b9;
+    /* color: #6da2e1; */
+}
+
+.title__link._not-main {
     color: #6da2e1;
 }
+
+.title__link._primary {
+    /* color: #0054b9; */
+    font-size: 19.05px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.title .title__link {
+
+}
+
+.tabs__button {
+    width: 24px;
+    height: 24px;
+
+    margin-top: -7px;
+    margin-bottom: -7px;
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z' fill='%23000' fill-rule='evenodd'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    cursor: pointer;
+
+    /* opacity: .25; */
+
+    border: 1px solid red;
+}
+
+.global-news .tabs__button {
+    opacity: 0;
+}
+
+.global-news:hover .tabs__button {
+    opacity: .25;
+}
+
+.global-news:hover .tabs__button:hover {
+    opacity: 1;
+    transition: opacity .15s ease-out;
+}
+
 
 .global-news__list {
     padding-left: 0;
 
     list-style: none;
 
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.4px;
+
     border: 1px solid green;
 }
 
-
-.global-news__item {
+.news-list__item {
+    display: flex;
     margin-bottom: 8px;
 
     border: 1px solid green;
 }
 
-.global-news__item:last-of-type {
+.item__link {
+    display: flex;
+}
+
+.news-list__item:last-of-type {
     margin-bottom: 0;
 }
 
-.global-news__item-link {
+.item__link {
+    display: flex;
     color: #000;
 }
 
+/* Stocks styles start */
+
+.stocks {
+    display: flex;
+    border: 1px solid orange;
+}
+
+.stocks__item {
+    display: flex;
+
+    padding-right: 16px;
+    padding-bottom: 9px;
+
+    font-size: 14.1px;
+    font-weight: 400;
+    line-height: 19.1833px;
+
+    /* border: 1px solid orange; */
+}
+
+.stock-item__link {
+    margin-right: 6px;
+
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.stock-item__cell {
+    /* margin: -2px -2px -2px 7px; */
+    margin-left: 7px;
+    /* padding: 3px 0; */
+
+    text-align: right;
+    color: #999;
+
+    /* border: 1px solid orange; */
+}
+
+
+/* Stocks styles end */
+
+
 .news__local {
+    /* flex: 1 1 auto; */
+    max-width: 33.3%;
+    margin-left: 20px;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.4px;
+
     border: 1px solid green;
 }
 
+
 .weather__tabs {
     display: flex;
+    align-items: center;
+
     border: 1px solid green;
 }
 
@@ -144,36 +303,60 @@
     border: 1px solid green;
 }
 
+.w-content__link {
+    display: flex;
+    align-items: center;
+
+    margin-right: 10px;
+    font-size: 26px;
+    border: 1px solid green;
+}
+
 .traffic__content {
     display: flex;
 }
 
-.weather__forecast-link {
+.w-forecsat {
+    display: flex;
+}
+
+.w-forecast__link {
     color: #000;
 }
 
-.traffic__forecast-link {
+.w-forecast-link__text {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 9px;
+    text-align: center;
+    color: #90919d;
+}
+
+.w-forecast-link__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -4px 2px 0;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px 20px;
+}
+
+.w-forecast-link__content {
+    font-size: 12px;
+}
+
+.t-content__link {
+    display: flex;
+}
+
+.t-forecast__link {
     color: #000;
 }
 
 /* new styles end */
 
-/* link styles start */
-
-.link {
-    text-decoration: none;
-}
-
-.link:hover {
-    color: red;
-    transition: color .15s ease-out;
-}
-
-._active {
-    color: #0054b9;
-}
-
-/* links styles end */
 
 /* services start*/
 
@@ -194,29 +377,125 @@
     border: 1px solid violet;
 }
 
-.services__item {
+.services-list__service {
+    flex-grow: 1;
     min-width: 90px;
     border: 1px solid violet;
 }
 
-.services__item-link {
+.service__link {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.services__item-link:hover .services__item-icon {
+.service-link:hover .service-link__icon {
     transform:  translateY(-5px);
     transition: transform ease-out .15s;
 }
 
-.services__item-icon {
+.service-link__icon {
     width: 44px;
     height: 44px;
 }
 
-.services__item-title {
+.services-link__content {
     font-size: 12px;
 }
 /* servisec end */
+
+.search__panel {
+    position: relative;
+    font-size: 18.465px;
+    border: 1px solid red;
+}
+
+.panel__form {
+    display: flex;
+
+    background: #fc0;
+    border-radius: .625rem;
+}
+
+.form__input {
+    width: 100%;
+}
+
+.form__button {
+    /* appearance: none; */
+    border: 0;
+    background-color: #fc0;
+}
+
+.recommendation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.advertising__block {
+    height: 113px;
+    background: lightblue;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: calc(100% + 5px);
+    bottom: 0;
+    height: 0;
+    margin: auto;
+}
+
+.logo__link {
+    margin-top: -55px;
+    display: block;
+}
+
+/* link styles start */
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: red;
+    transition: color .15s ease-out;
+}
+
+/* links styles end */
+
+/* aside styles */
+.desktop-notifications {
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    /* border: 1px solid blue; */
+}
+
+.notification-block {
+    padding: 0 0 6px 26px;
+
+
+    /* border: 1px solid blue; */
+    /* background: blue; */
+}
+
+.card {
+    margin-right: 6px;
+    padding: 14px 10px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgba(0, 0, 0, .08);
+
+    font-size: 14.001px;
+
+    /* border: 1px solid red; */
+    /* background: red; */
+}
+
+.card:hover {
+    transform: translateX(-20px);
+    transition: transform .15s ease-out 50ms;
+}
