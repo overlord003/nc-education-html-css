@@ -1,0 +1,44 @@
+.link {
+    color: currentColor;
+    text-decoration: none;
+
+
+    &:hover {
+        color: #ff0000;
+        transition: color .15s ease-out;
+    }
+    
+    &_primary {
+        font-weight: 700;
+    }
+    
+    &_transparent {
+        color: #90919d;
+    }
+    
+    &_container {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        font-size: 12px;
+    }
+    
+    &_container:hover .link__icon._move-up {
+        transform:  translateY(-5px);
+        transition: transform ease-out .15s;
+    }
+    
+    &_current {
+    
+        display: flex;
+        align-items: center;
+        
+        margin-right: 10px;
+        font-size: 26px;
+        border: 1px solid green;
+    }
+
+}
