@@ -2,21 +2,52 @@
     color: currentColor;
     text-decoration: none;
 
-
-    &:hover {
-        color: #ff0000;
-        transition: color .15s ease-out;
-    }
-    
-    &_primary {
+    &._primary {
         font-weight: 700;
     }
-    
-    &_transparent {
-        color: #90919d;
+
+    &._secondary {
+        color: @light-blue;
+    }
+
+    /* У ссылок в виде погодных карточек утро, день, вечер, ночь. */
+    &._card {
+        display: inline-block;
+    }
+
+    &._card &__title{
+        display: block;
+        font-size: 9px;
+        text-align: center;
+        color: @light-gray;
+    }
+
+    &._card &__icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: -4px 2px 0;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 20px 20px;
+    }
+
+    &._card &__content{
+        display: inline;
+        font-size: 12px;
+        line-height: 1.17;
+        white-space: nowrap;
+        color: @black;
+    }
+
+    /* Уф спать хочу */
+
+    &._card:hover &__content{
+        color: @dark-red;
     }
     
-    &_container {
+    &._container {
         width: 100%;
     
         display: flex;
@@ -26,19 +57,22 @@
         font-size: 12px;
     }
     
-    &_container:hover .link__icon._move-up {
+    &._container:hover .link__icon._move-up {
         transform:  translateY(-5px);
         transition: transform ease-out .15s;
     }
     
-    &_current {
-    
+    &._current {
+        margin-right: 10px;
+
         display: flex;
         align-items: center;
         
-        margin-right: 10px;
         font-size: 26px;
-        border: 1px solid green;
     }
 
+    &:hover {
+        color: @dark-red;
+        transition: color .15s linear;
+    }
 }
