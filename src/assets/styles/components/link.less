@@ -2,6 +2,11 @@
     color: currentColor;
     text-decoration: none;
 
+    &:hover, &._secondary:hover {
+        color: @dark-red;
+        transition: color .15s linear;
+    }
+
     &._primary {
         font-weight: 700;
     }
@@ -9,6 +14,17 @@
     &._secondary {
         color: @light-blue;
     }
+
+    /* При наведении на иконки колокольчика, тележки и значков на панели поиска */
+    &._darkens {
+        color: @black;
+        opacity: .24;
+    }
+
+    &._darkens:hover {
+        opacity: .32;
+    }
+    /* Собсна вот */
 
     /* У ссылок в виде погодных карточек утро, день, вечер, ночь. */
     &._card {
@@ -41,12 +57,13 @@
         color: @black;
     }
 
-    /* Уф спать хочу */
-
     &._card:hover &__content{
         color: @dark-red;
     }
+
+    /* Я умерла на карточках */
     
+    /* _container styles start - для значков над панелью поиска */
     &._container {
         width: 100%;
     
@@ -61,6 +78,7 @@
         transform:  translateY(-5px);
         transition: transform ease-out .15s;
     }
+    /* _contayner styles end */
     
     &._current {
         margin-right: 10px;
@@ -71,8 +89,36 @@
         font-size: 26px;
     }
 
-    &:hover {
+    &._moved-left {
+        margin-top: -55px;
+        display: block;
+    }
+
+    &._bold {
+        font-weight: 700;
+    }
+
+    &__content._letters {
+        padding-left: 8px;
+        font-weight: 700;
+    }
+
+    &__first-letter {
         color: @dark-red;
-        transition: color .15s linear;
+    }
+
+
+    &._y-plus {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        align-items: center;
+
+        font-size: 13px;
+        line-height: 16px;
     }
 }

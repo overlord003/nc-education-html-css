@@ -1,0 +1,14 @@
+.close-button {
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+    
+    opacity: 0;
+
+    .notification-block:hover & {
+        opacity: 1;
+        transition: opacity .1s ease-out;
+        transition-delay: .15s;
+    }
+}
