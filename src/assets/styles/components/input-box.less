@@ -12,7 +12,14 @@
         border-bottom-left-radius: 10px;
     
         border-right-width: 80px;
-        border-left-width: 11px;            
+        border-left-width: 11px;   
+
+        &::-ms-clear {  display: none; width : 0; height: 0; }
+        &::-ms-reveal {  display: none; width : 0; height: 0; }
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration { display: none; }
     }
     
     &__keyboard {
@@ -27,5 +34,16 @@
         top: 0;
         right: 0;
         bottom: 0;
+
+        color: @black;
+        opacity: .17;
+
+        &:hover {
+            opacity: .32;
+        }
+    }
+
+    &__voice-search, &__keyboard {
+        cursor: pointer;
     }
 }

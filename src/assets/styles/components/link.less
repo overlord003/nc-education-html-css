@@ -8,11 +8,15 @@
     }
 
     &._primary {
-        font-weight: 700;
+        font-weight: 500;
     }
 
     &._secondary {
         color: @light-blue;
+    }
+
+    &._less {
+        .make-text(14px, 19px, 400);
     }
 
     /* При наведении на иконки колокольчика, тележки и значков на панели поиска */
@@ -116,5 +120,26 @@
 
         display: flex;
         align-items: center;
+    }
+
+    &__icon._block {
+        width: 36px;
+        height: 36px;
+
+        padding: 4px;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &._with-line::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 24px;
+        right: 0;
+        top: 10px;
+        background-color: @line-color;
     }
 }
