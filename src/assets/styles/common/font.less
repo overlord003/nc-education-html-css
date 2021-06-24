@@ -1,3 +1,27 @@
-.font-face('Yandex Sans Text', 'Regular', normal, normal);
-.font-face('Yandex Sans Text', 'Bold', bold, normal);
-.font-face('Yandex Sans Text', 'Medium', 500, normal);
+.font-face(@font-family, @font-weight, @font-path-primary, @font-path-secondary) {
+    @font-face {
+        font-family: @font-family;
+        font-weight: @font-weight;
+        font-style: normal;
+        font-display: swap;
+        src: url(@font-path-primary) format('woff2'),
+                url(@font-path-secondary) format('woff');
+    }
+}
+
+.font-face('Yandex Sans Text',
+    @font-weight-regular,
+    '../../fonts/YandexSansText-Regular.woff2',
+    '../../fonts/YandexSansText-Regular.woff');
+
+.font-face('Yandex Sans Text',
+    @font-weight-bold,
+    '../../fonts/YandexSansText-Bold.woff2',
+    '../../fonts/YandexSansText-Bold.woff'
+);
+
+.font-face('Yandex Sans Text',
+    @font-weight-medium,
+    '../../fonts/YandexSansText-Medium.woff2',
+    '../../fonts/YandexSansText-Medium.woff'
+);

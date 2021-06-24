@@ -8,15 +8,16 @@
     }
 
     &._primary {
-        font-weight: 500;
+        font-weight: @font-weight-bold;
     }
 
-    &._secondary {
+    &._blue {
         color: @light-blue;
     }
 
     &._less {
-        .make-text(14px, 19px, 400);
+        .font-regular();
+        font-size: @font-size-m;
     }
 
     /* При наведении на иконки колокольчика, тележки и значков на панели поиска */
