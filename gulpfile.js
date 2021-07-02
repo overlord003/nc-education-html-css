@@ -8,6 +8,7 @@ const gulp = require("gulp"),
 	less = require("gulp-less"),
 	autoprefixer = require("gulp-autoprefixer"),
 	browserSync = require("browser-sync").create();
+	mergeStream = require("merge-stream");
 
 gulp.task("svgstore", function () {
 	const svgs = gulp
@@ -51,7 +52,11 @@ gulp.task("less", function () {
 });
 
 gulp.task("html", function () {
-	return gulp.src("./src/index.html").pipe(gulp.dest("./dist"));
+	return mergeStream(
+		gulp.src("./src/index.html").pipe(gulp.dest("./dist")),
+		gulp.src("./src/pages/yandex-main-page.html").pipe(gulp.dest("./dist")),
+		gulp.src("./src/pages/mail-main-page.html").pipe(gulp.dest("./dist"))
+	);
 });
 
 gulp.task("fonts", function () {

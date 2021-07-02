@@ -1,0 +1,62 @@
+.mail-link {
+    color: currentColor;
+    text-decoration: none;
+
+    // Для главных ссылок в разделе (Mail.ru в header)
+    &._primary {
+        font-weight: @font-weight-bold;
+    }
+
+    // Для ссылок с фоном при наведенеии (все в header)
+    &._with-bg {
+        height: 28px;
+        padding: 4px 8px;
+    
+        border-radius: @border-radius;
+    
+        box-sizing: border-box;
+    
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    
+        &:hover {
+            background-color: @light-gray;
+        }
+    }
+
+    // Кристина ты же не забудешь поправить цвет при наведении да?
+    &._gray-bg {
+        background-color: @gray;
+
+        &:hover {
+            background-color: @gray;
+        }
+    }
+
+    &._middle-padding {
+        padding: 6px 16px;
+    }
+
+    &._title {
+        font-size: 11px;
+        line-height: 16px;
+        font-weight: @font-weight-bold;
+        text-transform: uppercase;
+        letter-spacing: .8px;
+
+        color: @color-secondary;
+    }
+
+    &._full {
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

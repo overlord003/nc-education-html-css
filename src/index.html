@@ -1,315 +1,62 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Яндекс</title>
+    <title>Main page</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__geolocation geolocation">
-                <a class="geolocation__link link _primary" href="#" target="_blank">
-                    <svg class="link__icon geo-icon"><use href="#icon-geo"></use></svg>
-                    <span class="link__content">Москва</span>
-                </a>
-                <span class="geolocation__datetime datetime">
-                    <span class="datetime__date">24 июня, четверг</span>
-                    <a class="datetime__time link" href="#" target="_blank">
-                        <span class="link__content">21:02</span>
-                    </a>
-                </span>
-                <a class="geolocation__link link" href="#" target="_blank">Сделать стартовой</a>  
-            </div>
-            <div class="header__bar bar">
-                <a class="bar__link link _darkens" href="#" target="_blank">
-                    <svg class="link__icon market-icon"><use href="#icon-market"></use></svg>
-                </a>
-                <a class="bar__link link _darkens" href="#" target="_blank">
-                    <svg class="link__icon bell-icon"><use href="#icon-bell"></use></svg>
-                </a>
-            </div>
+    <div class="main-app">
+        <header class="main-header">
+            <h1 class="main-header__title">Netcracker Education 2021</h1>
+            <p class="main-header__subtitle">
+              Что нас заставлял делать Максим этим летом? Смотри ниже!
+            </p>
         </header>
-        <main class="main">
-            <section class="news">
-                <div class="news__global-news container">
-                    <div class="container__tabs tabs">
-                        <h1 class="tabs__title title"><a class="title__link link" href="#" target="_blank">Сейчас в СМИ</a></h1>
-                        <h1 class="tabs__title title"><a class="title__link link _blue" href="#" target="_blank">в Москве</a></h1>
-                        <h1 class="tabs__title title"><a class="title__link link _blue" href="#" target="_blank">Интересное </a></h1>
-                        <span class="tabs__button"></span>
-                    </div>
-                    <ul class="container__list news-list">
-                        <li class="news-list__item item">
-                            <a class="item__link link" href="#" target="_blank">
-                                <svg class="link__icon news-icon"><use href="#icon-first-news"></use></svg>
-                                <span class="link__content">В Минздраве допустили ревакцинацию привитых «Спутником V» другой вакциной</span>
-                            </a>
-                        </li>
-                        <li class="news-list__item item">
-                            <a class="item__link link" href="#" target="_blank">
-                                <svg class="link__icon news-icon"><use href="#icon-second-news"></use></svg>
-                                <span class="link__content">В пожаре на АЗС в Новосибирске пострадали 16 человек</span>
-                            </a>
-                        </li>
-                        <li class="news-list__item item">
-                            <a class="item__link link" href="#" target="_blank">
-                                <svg class="link__icon news-icon"><use href="#icon-second-news"></use></svg>
-                                <span class="link__content">Появились показания свидетелей ракетного пуска перед крушением «Боинга» MH17</span>
-                            </a>
-                        </li>
-                        <li class="news-list__item item">
-                            <a class="item__link link" href="#" target="_blank">
-                                <svg class="link__icon news-icon"><use href="#icon-first-news"></use></svg>
-                                <span class="link__content">Глава МИД Украины Кулеба потребовал обменять «Северный поток — 2» на Крым</span>
-                            </a>
-                        </li>
-                        <li class="news-list__item item">
-                            <a class="item__link link" href="#" target="_blank">
-                                <svg class="link__icon news-icon"><use href="#icon-second-news"></use></svg>
-                                <span class="link__content">Жители Германии возмутились речью Меркель о Великой Отечественной Войне</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <section class="container__stocks stocks">
-                        <div class="stocks__item stock-item">
-                            <a class="stock-item__link link" href="#" target="_blank">USD</a>
-                            <span class="stock-item__value">72,28</span>
-                            <span class="stock-item__cell">-0,54</span>
-                        </div>
-                        <div class="stocks__item stock-item">
-                            <a class="stock-item__link link" href="#" target="_blank">EUR</a>
-                            <span class="stock-item__value">88,01</span>
-                            <span class="stock-item__cell">-0,77</span>
-                        </div>
-                        <div class="stocks__item stock-item">
-                            <a class="stock-item__link link" href="#" target="_blank">Нефть</a>
-                            <span class="stock-item__value">72,24</span>
-                            <span class="stock-item__cell">+0,01%</span>
-                        </div>
-                    </section>
-                </div>
-                <div class="news__local-news local-news">
-                    <div class="local-news__container container">
-                        <div class="container__tabs tabs">
-                            <h1 class="tabs__title title"><a class="title__link link" href="#" target="_blank">Погода</a></h1>
-                            <h1 class="tabs__title title"><a class="title__link link _less" href="#" target="_blank">Карта осадков</a></h1>
-                            <span class="tabs__button"></span>
-                        </div>
-                        <div class="container__content content">
-                            <a class="content__link link _current" href="#" target="_blank">
-                                <span class="link__icon current-weather-icon"></span>
-                                <span class="link__content">+20°</span>
-                            </a>
-                            <div class="content__forecast forecsat">
-                                <a class="forecsat__link link _card" href="#" target="_blank">
-                                    <span class="link__title">Ночью</span>
-                                    <span class="link__icon weather-icon"></span>
-                                    <span class="link__content">22°</span>
-                                </a>
-                                <a class="forecsat__link link _card" href="#" target="_blank">
-                                    <span class="link__title">Утром</span>
-                                    <span class="link__icon weather-icon"></span>  
-                                    <span class="link__content">22°</span>
-                                </a>
-                                <a class="forecsat__link link _card" href="#" target="_blank">
-                                    <span class="link__title">Днём</span>
-                                    <span class="link__icon weather-icon"></span>
-                                    <span class="link__content">22°</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="local-news__container container">
-                        <div class="container__tabs tabs">
-                            <h1 class="tabs__title title"><a class="title__link link" href="#" target="_blank">Пробки</a></h1>
-                            <h1 class="tabs__title title"><a class="title__link link _less" href="#" target="_blank">Метро</a></h1>
-                            <h1 class="tabs__title title"><a class="title__link link _less" href="#" target="_blank">Расписания</a></h1>
-                            <h1 class="tabs__title title"><a class="title__link link _less" href="#" target="_blank">Такси</a></h1>  
-                            <span class="tabs__button"></span>
-                        </div>
-                        <div class="container__content content">
-                            <a class="content__link link _current" href="#" target="_blank">
-                                <span class="link__icon current-traffic-icon"></span>
-                                <span class="link__content">0</span>
-                            </a>
-                            <div class="content__forecast forecast">
-                                <a class="forecast__link link" href="#" target="_blank">
-                                    <span class="link__content">До 22ч. дороги свободны</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <main class="main-content">
+            <section class="main-content__description intro">
+                <h2 class="intro__title">Первые шаги</h2>
+                <p class="intro__text">
+                    Сначала мы занимались изучением html и css, познали основы вёрстки.
+                    Было прорешано множество задач на html и css и прочитано 1000 страниц 
+                    теории.
+                </p>
+                <p class="intro__text">
+                    В результате мы сделали несколько крутых проектов: Yandex, Mail 
+                    и CSS Tricks, хотя последним Максим был очень недоволен - его упростили
+                    со времён его молодости.
+                </p>
             </section>
-            <section class="search">
-                <nav class="search__services services">
-                    <ul class="services__list services-list">
-                        <li class="services-list__service service">
-                            <a class="service__link link _container _with-line" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-football"></use></svg>
-                                <span class="link__content">Футбол</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-market"></use></svg>
-                                <span class="link__content">Маркет</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-video"></use></svg>
-                                <span class="link__content">Видео</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-images"></use></svg>
-                                <span class="link__content">Картинки</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-news"></use></svg>
-                                <span class="link__content">Новости</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-maps"></use></svg>
-                                <span class="link__content">Карты</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-translate"></use></svg>
-                                <span class="link__content">Переводчик</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-music"></use></svg>
-                                <span class="link__content">Музыка</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <svg class="link__icon nav-icon _move-up"><use href="#icon-nav-tv"></use></svg>
-                                <span class="link__content">Программа</span>
-                            </a>
-                        </li>
-                        <li class="services-list__service service">
-                            <a class="service__link link _container" href="#" target="_blank">
-                                <div class="link__icon _block _move-up">
-                                    <svg class="more-icon-0 nav-icon _mini"></svg>
-                                    <svg class="more-icon-1 nav-icon _mini"></svg>
-                                    <svg class="more-icon-2 nav-icon _mini"></svg>
-                                    <svg class="more-icon-3 nav-icon _mini"></svg>
-                                </div>
-                                <span class="link__content">ещё</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="search__panel panel">
-                    <div class="panel__logo logo">
-                        <a class="logo__link link _moved-left" href="#" target="_blank">
-                            <svg class="link__icon logo-icon"><use href="#icon-logo"></use></svg>
-                        </a>
-                    </div>
-                    <form class="panel__form form">
-                        <div class="form__input-box input-box">
-                            <input class="input-box__input" type="search" placeholder="Найдётся всё">
-                            <svg class="input-box__voice-search voice-search-icon"><use href="#icon-voice-search"></use></svg>
-                            <span class="input-box__keyboard keyboard-box">
-                                <svg class="keyboard-box__icon keyboard-icon"><use href="#icon-keyboard"></use></svg>
-                            </span>
-                        </div>
-                        <button class="form__button" type="submit">Найти</button>
-                    </form>
-                </div>
-                <div class="search__recommendation recommendation">
-                    <a class="recommendation__link link" href="#" target="_blank">
-                        <svg class="link__icon yandex-browser-icon"><use href="#icon-yandex-browser"></use></svg>
-                        <span class="link__content">Установите Яндекс.Браузер</span>
-                    </a>
-                </div>
-            </section>
-            <section class="advertising">
-                <div class="advertising__block"></div>
+            <section class="main-content__my-projects my-projects">
+                <!-- <h2 class="my-projects__title">Мои проекты</h2> -->
+                <a class="my-projects__project-card project-card" href="./yandex-main-page.html" target="_blank">
+                    <p class="project-card__title">Yandex</p>
+                    <img class="project-card__image">
+                    <p class="project-card__description">
+                        В первую очередь был сделан Яндекс.
+                    </p>
+                </a>
+                <a class="my-projects__project-card project-card" href="./mail-main-page.html" target="_blank">
+                    <p class="project-card__title">Mail</p>
+                    <img class="project-card__image">
+                    <p class="project-card__description">
+                        Для закрепления полученных навыков сверстали Мейл.
+                    </p>
+                </a>
+                <a class="my-projects__project-card project-card" href="https://css-tricks.com/" target="_blank">
+                    <p class="project-card__title">CSS-Tricks</p>
+                    <img class="project-card__image">
+                    <p class="project-card__description">
+                        Ссылочка сюрприз! Неужели Кристина уже сделала css трикс?
+                    </p>
+                </a>
             </section>
         </main>
-        <aside class="desktop-notifications">
-            <div class="desktop-notifications__block notification-block">
-                <div class="notification-block__card card">
-                    <div class="card__user user">
-                        <a class="user__link link _bold" href="#" target="_blank">
-                            <span class="link__first-letter">c</span>hrislvt
-                        </a>    
-                        <a class="user__link link _avatar-link" href="#" target="_blank">
-                            <svg class="link__icon avatar-icon"><use href="#icon-avatar"></use></svg>
-                        </a>                     
-                    </div>
-                    <div class="card__detalies detalies">
-                        <a class="detalies__link link" href="#" target="_blank">
-                            <span class="link__content">Почта</span>
-                            <span class="link__content _letters">4855</span>
-                        </a>
-                        <a class="detalies__link link" href="#" target="_blank">Диск</a>
-                    </div>
-                </div>
-            </div>
-            <div class="desktop-notifications__block notification-block">
-                <div class="notification-block__card card">
-                    <a class="card__link link _y-plus" href="#" target="_blank"></a>
-                    <div class="card__recommedation">
-                        <svg class="yandex-plus-icon"><use href="#icon-yandex-plus"></use></svg>
-                        <span class="card__content">Попробовать Плюс</span>
-                    </div>
-                </div>
-            </div>
-            <div class="desktop-notifications__block notification-block">
-                <div class="notification-block__card card animated-block">
-                    <div class="card__title user">
-                        <a class="user__link link _bold" href="#" target="_blank">Москва</a>    
-                    </div>
-                    <div class="card__covid covid">
-                        <span class="covid__content">+14185 выявлено</span>
-                        <svg class="covid__icon covid-icon"><use href="#icon-covid"></use></svg>
-                    </div>
-                </div>
-                <div class="notification-block__button close-button">
-                    <svg class="close-button__icon close-icon"><use href="#icon-close"></use></svg>
-                </div>
-            </div>
-        </aside>
+        <footer>
+            Я устала.
+        </footer>
     </div>
-
-    <div class="svg-store _hidden">
-        <!-- inject:svg -->
-
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="paint0_linear" x1="30.7" y1="9.3" x2="11.44" y2="34.83" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="paint0_linear" x1="22" y1="-1.61" x2="22" y2="41.04" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE55B"/><stop offset="1" stop-color="#FC0"/></linearGradient><linearGradient id="paint1_linear" x1="22" y1="2.9" x2="22" y2="35.02" gradientUnits="userSpaceOnUse"><stop stop-color="#3E3F3A"/><stop offset="1"/></linearGradient><linearGradient id="paint0_linear" x1="33.68" y1="9.69" x2="12.42" y2="37.87" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="paint0_linear" x1="22" y1="-1.46" x2="22" y2="38" gradientUnits="userSpaceOnUse"><stop stop-color="#3E3F3A"/><stop offset="1"/></linearGradient><linearGradient id="paint1_linear" x1="22" y1="2.77" x2="22" y2="37.5" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE55B"/><stop offset="1" stop-color="#FC0"/></linearGradient><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16.32 19.83) scale(11.7609)"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><radialGradient cx="38.24%" cy="10.58%" fx="38.24%" fy="10.58%" r="93.61%" id="b"><stop stop-color="#F03C00" stop-opacity="0" offset="0%"/><stop stop-color="#F03C00" stop-opacity="0" offset="72.66%"/><stop stop-color="#F03C00" offset="100%"/></radialGradient><radialGradient cx="88.2%" cy="11.31%" fx="88.2%" fy="11.31%" r="51.28%" gradientTransform="matrix(0 -.975 1 0 .77 .97)" id="c"><stop stop-color="#9699C7" offset="0%"/><stop stop-color="#9499C9" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="8.17%" cy="-6.53%" fx="8.17%" fy="-6.53%" r="65.22%" gradientTransform="matrix(0 -.975 1 0 .15 .01)" id="d"><stop stop-color="#9699C7" offset="0%"/><stop stop-color="#9499C9" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="88.2%" cy="9.46%" fx="88.2%" fy="9.46%" r="49.38%" gradientTransform="matrix(0 -.975 1 0 .79 .95)" id="f"><stop stop-color="#486DA8" offset="0%"/><stop stop-color="#486DA8" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="14.44%" cy="0%" fx="14.44%" fy="0%" r="51.28%" gradientTransform="matrix(0 -.975 1 0 .14 .14)" id="g"><stop stop-color="#486DA8" offset="0%"/><stop stop-color="#486DA8" stop-opacity="0" offset="100%"/></radialGradient><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#FFBE1D" offset="0%"/><stop stop-color="#FFB300" offset="100%"/></linearGradient><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="e"><stop stop-color="#A4C5F4" offset="0%"/><stop stop-color="#A7C7F2" offset="100%"/></linearGradient><linearGradient x1="50%" y1="0%" x2="50%" y2="122.37%" id="h"><stop stop-color="#A4C5F4" offset="0%"/><stop stop-color="#A7C7F2" offset="100%"/></linearGradient><linearGradient gradientUnits="userSpaceOnUse" y2="516.48" x2="0" y1="546.93" id="a" gradientTransform="matrix(2.65716 0 0 2.66062 -1654.273 -2219.2)"><stop stop-color="#d3d3d3"/><stop offset="1" stop-color="#fcf9f9"/></linearGradient><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(15.99999 -15.99999 24.2158 24.2158 4 20)"><stop offset=".076" stop-color="#48CCE0" id="stop10"/><stop offset=".308" stop-color="#428BEB" id="stop12"/><stop offset=".648" stop-color="#505ADD" id="stop14"/></radialGradient><radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-15.8049 0 0 -44.8359 20 4)"><stop offset=".029" stop-color="#FCAB14" id="stop17"/><stop offset=".192" stop-color="#FA6641" id="stop19"/><stop offset=".402" stop-color="#BE40C0" id="stop21"/><stop offset="1" stop-color="#505ADD" stop-opacity="0" id="stop23"/></radialGradient><radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(15.99999 -15.99999 24.2158 24.2158 4 20)"><stop offset=".076" stop-color="#48CCE0" id="stop26"/><stop offset=".308" stop-color="#428BEB" id="stop28"/><stop offset=".648" stop-color="#505ADD" id="stop30"/></radialGradient><radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-15.8049 0 0 -44.8359 20 4)"><stop offset=".029" stop-color="#FCAB14" id="stop33"/><stop offset=".192" stop-color="#FA6641" id="stop35"/><stop offset=".402" stop-color="#BE40C0" id="stop37"/><stop offset="1" stop-color="#505ADD" stop-opacity="0" id="stop39"/></radialGradient></defs><symbol id="icon-avatar" viewBox="0 0 34 34"><path d="M9.5.9C6.7 2.1 1.9 7 .9 9.8c-1.4 3.7-1.1 12 .6 15.2 1.8 3.5 1.3 3.3 7.1 1.9 3.8-1 4.4-1.5 4.4-3.8 0-1.4-.7-3.4-1.5-4.4-1.6-2.2-.9-8.4 1.2-10.8 1.7-2 8.4-3 9.8-1.5.6.6 1.2 3.4 1.2 6.2.2 5.7-2.3 10.9-6 12.4l-2.2.9h2.3c1.2.1 4 1 6.2 2.1s4.3 2 4.8 2c.4 0 1.9-1.8 3.1-4.1 1.9-3.3 2.3-5.2 1.9-10.3-.4-6.5-2-9.5-6.7-13.1C24.2.3 13.1-.7 9.5.9z"/></symbol><symbol id="icon-bell"><path d="M18 30a3 3 0 003-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 003 3z"/><path d="M15.687 12.5l.3-.164a1.5 1.5 0 00.75-1.021l.142-.712a.75.75 0 01.736-.603h.77a.75.75 0 01.736.603l.142.712a1.5 1.5 0 00.75 1.02l.3.165a5.586 5.586 0 013.24 4.47l.54 4.863c.1.906.563 1.733 1.282 2.292l.354.275a1.5 1.5 0 01.534 1.548L26.25 26a1.32 1.32 0 01-1.28 1H11.03a1.32 1.32 0 01-1.28-1l-.013-.052a1.5 1.5 0 01.534-1.548l.354-.275a3.375 3.375 0 001.282-2.292l.54-4.864a5.586 5.586 0 013.24-4.469z"/></symbol><symbol id="icon-close" viewBox="0 0 24 24"><path d="M16.9 7.9l-.8-.8-4.1 4-4.1-4-.8.8 4 4.1-4 4.1.8.8 4.1-4 4.1 4 .8-.8-4-4.1z"/></symbol><symbol id="icon-covid"><rect y="40%" width="2" height="60%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="3" y="39.3%" width="2" height="60.7%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="6" y="39.2%" width="2" height="60.8%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="9" y="37.9%" width="2" height="62.1%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="12" y="37.8%" width="2" height="62.2%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="15" y="36%" width="2" height="64%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="18" y="32.2%" width="2" height="67.8%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="21" y="29.3%" width="2" height="70.7%" rx="1.5" ry="1.5" fill="#e95b3b"/><rect x="24" y="20.5%" width="2" height="79.5%" rx="1.5" ry="1.5" fill="#e95b3b"/><rect x="27" y="15.1%" width="2" height="84.9%" rx="1.5" ry="1.5" fill="#d1352b"/><rect x="30" y="8.2%" width="2" height="91.8%" rx="1.5" ry="1.5" fill="#a2202c"/><rect x="33" y="0%" width="2" height="100%" rx="1.5" ry="1.5" fill="#a2202c"/><rect x="36" y="6.8%" width="2" height="93.2%" rx="1.5" ry="1.5" fill="#a2202c"/><rect x="39" y="3.7%" width="2" height="96.3%" rx="1.5" ry="1.5" fill="#a2202c"/></symbol><symbol id="icon-first-news" viewBox="0 0 40 40"><path d="M25.6 6.9C23.6 9.1 20 9.8 20 8c0-2.5-2.8-.6-5.3 3.5-2.8 4.8-3.3 6.5-1.8 6.5 1.8 0 4.1-3.1 4.1-5.5 0-2.8 1.5-4.1 2.4-2 .3.8 1.6 1.5 2.8 1.5 2.1.1 2 .3-1.2 2.8-8.7 6.7-11.4 12.5-8.6 18 1.9 3.6 4.1 4 8.6 1.7 6.4-3.3 10.4-14.2 6.5-17.5C24 14.1 16 24.9 17.4 30.6c1 4 2.2 2.7 2.2-2.5 0-5 2.6-10.7 4.4-9.6 1.5.9 1.2 8.3-.5 11.5-2.1 4.1-4.9 5.4-6.9 3.4-3.1-3.1-1.5-9.8 3.8-15.4 4.8-5.1 7.8-9.8 7.4-11.6-.3-1.4-.6-1.3-2.2.5z"/></symbol><symbol id="icon-geo" viewBox="0 0 16 16"><path d="M13.07 3.58l-4 9.98a.5.5 0 01-.95-.06L7 9 2.5 7.88a.5.5 0 01-.06-.95l9.98-4a.5.5 0 01.65.65z"/></symbol><symbol id="icon-keyboard"><path clip-rule="evenodd" d="M25.693 0H1.54C.436 0 .013.422.013 1.527v8.961c0 1.105.423 1.527 1.527 1.527h24.153c1.104 0 1.307-.422 1.307-1.527V1.527C27 .422 26.798 0 25.693 0zm-2.672 2.061h1.935v1.934h-1.935V2.061zm-6 0h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934h-1.935V2.061zm2.935 3v1.934h-1.935V5.061h1.935zm-5.935-3h1.935v1.934H8.021V2.061zm2.935 3v1.934H9.021V5.061h1.935zm-5.935-3h1.935v1.934H5.021V2.061zm-3 0h1.935v1.934H2.021V2.061zm0 3h2.994v1.934H2.021V5.061zm3.95 4.933H1.993V8.061h3.978v1.933zm.05-4.933h1.935v1.934H6.021V5.061zm13.95 4.933H7.008V8.061h12.963v1.933zm.05-7.933h1.935v1.934h-1.935V2.061zm4.95 7.933h-3.978V8.061h3.978v1.933zM25 6.995h-3.979V5.061H25v1.934z"/></symbol><symbol id="icon-logo"><path d="M121.943 65.335c2.261 0 3.865-.412 5.057-1.275v-3.988c-1.234.863-2.714 1.398-4.77 1.398-3.494 0-4.933-2.714-4.933-6.99 0-4.482 1.768-6.784 4.975-6.784 1.891 0 3.741.658 4.728 1.275v-4.153c-1.028-.576-2.837-.987-5.263-.987-6.249 0-9.498 4.482-9.498 10.772 0 6.908 3.166 10.732 9.704 10.732zm-30.59-1.81v-3.988c-1.521 1.028-4.07 1.933-6.455 1.933-3.578 0-4.934-1.686-5.14-5.14h11.8v-2.59c0-7.195-3.166-9.909-8.058-9.909-5.962 0-8.8 4.564-8.8 10.813 0 7.196 3.537 10.69 9.786 10.69 3.125 0 5.428-.822 6.867-1.809zM46.537 44.242v8.182h-6.538v-8.182h-4.892v20.681h4.892V56.29h6.538v8.634h4.893v-20.68h-4.893zM73.509 61.06h-2.18V44.242H57.063v1.768c0 5.057-.328 11.595-2.055 15.049h-1.522v8.593h4.523v-4.729h10.978v4.729h4.523v-8.593zm33.468 3.864h5.55l-7.853-11.142 6.908-9.539h-4.934l-6.908 9.539v-9.539h-4.892v20.681h4.892V54.768l7.237 10.155zm-23.56-17.227c2.426 0 3.166 2.015 3.166 4.605v.411h-6.825c.124-3.29 1.316-5.016 3.66-5.016zM66.437 61.06h-6.908c1.357-3.125 1.727-8.758 1.727-12.335v-.617h5.18V61.06z" fill="#000"/><path d="M30.995 64.923H26.02v-24.71H23.8c-4.07 0-6.208 2.055-6.208 5.098 0 3.453 1.48 5.057 4.522 7.113l2.508 1.686-7.236 10.813H12l6.496-9.662c-3.741-2.673-5.838-5.263-5.838-9.662 0-5.51 3.824-9.251 11.101-9.251h7.236v28.575z" fill="#FC3F1D"/></symbol><symbol id="icon-market"><path d="M20.68 5.55H6.48l-.46-1.68a2.2 2.2 0 00-2.13-1.62H1.43a1.1 1.1 0 100 2.2H3.9l2.82 10.33a2.2 2.2 0 002.48 1.6l11.3-1.9a2.2 2.2 0 00.84-2.16V7.2c0-.91-.74-1.65-1.65-1.65zM5.83 22.05a2.2 2.2 0 100-4.4 2.2 2.2 0 000 4.4zm11 0a2.2 2.2 0 100-4.4 2.2 2.2 0 000 4.4z"/></symbol><symbol id="icon-more-icon-0"><path fill-rule="evenodd" clip-rule="evenodd" d="M36 21.5a14.5 14.5 0 11-29 0 14.5 14.5 0 0129 0z" fill="#FC0"/><path fill-rule="evenodd" clip-rule="evenodd" d="M36 21.5a14.5 14.5 0 11-29 0 14.5 14.5 0 0129 0z" fill="url(#paint0_linear)" fill-opacity=".4"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.54 17.52c1.78 1.2 4.29.55 5.61-1.47 1.33-2.02.96-4.64-.8-5.85-1.78-1.2-4.3-.55-5.62 1.47-1.32 2.02-.96 4.64.81 5.85z" fill="#F33"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.92 6.08C14.78 23.9 25.94 22.71 38.35 16c3.36-2.03 3.11 2.38 1.53 4.06-2.96 3.14-14.72 8.48-14.24 16.5.14 1.69-.06 2.32-4.12 2.44-5.33-.06-5.82-1.31-6.35-2.4-3.64-7.4-7.06-18.73-7.1-28.31.02-2.6 3.38-4.63 3.85-2.2z" fill="#F33"/></symbol><symbol id="icon-more-icon-1"><path d="M6 22c0-6.56 0-9.84 1.63-12.16a9 9 0 012.2-2.21C12.17 6 15.45 6 22 6s9.84 0 12.16 1.63a9 9 0 012.21 2.2C38 12.17 38 15.45 38 22s0 9.84-1.63 12.16a9 9 0 01-2.2 2.21C31.83 38 28.55 38 22 38s-9.84 0-12.16-1.63a9 9 0 01-2.21-2.2C6 31.83 6 28.55 6 22z" fill="url(#paint0_linear)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.96 32.95c-.82-1.93-.94-4.54-.96-8.68l8.75-10.62 5.34 2.67L18.76 23 28.78 8.97l6.68 2.67-2 8.69 4.48-3.93c.06 1.56.06 3.4.06 5.6v2.47l-7.22 7.21-5.34-2.67 2-8.02-9.35 14.03-6.68-2.67 2-8.02-6.45 8.62z" fill="url(#paint1_linear)"/></symbol><symbol id="icon-more-icon-2"><path d="M15.85 26.48H6V38h9.85V26.48z" fill="#F33"/><path d="M26.92 17.52h-9.84V38h9.84V17.52z" fill="#07F"/><path d="M38 6h-9.85v32H38V6z" fill="#FC0"/></symbol><symbol id="icon-more-icon-3"><rect x="6" y="6" width="32" height="32" rx="9" fill="#FFE033"/><rect x="6" y="6" width="32" height="32" rx="9" fill="url(#paint0_linear)" fill-opacity=".2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.76 34.17c-2.9.34-5.87-.23-8.4-1.77a12.93 12.93 0 01-5.74-7.93 12.08 12.08 0 011.4-9.2 11.72 11.72 0 017.28-5.23 10.66 10.66 0 0113.04 8c.6 2.65.15 5.33-1.26 7.56a9.54 9.54 0 01-6.02 4.17 8.77 8.77 0 01-6.71-1.21 8.48 8.48 0 01-3.63-5.4 7.76 7.76 0 011.14-5.9 7.36 7.36 0 014.76-3.11 6.63 6.63 0 015.07 1.09 6.3 6.3 0 012.56 4.14 5.59 5.59 0 01-1.03 4.26 5.17 5.17 0 01-3.53 2.02 4.47 4.47 0 01-3.42-1 4.14 4.14 0 01-1.46-2.96 3.4 3.4 0 011-2.59 3.06 3.06 0 012.49-.83c.73.1 1.33.5 1.7 1.14a1.13 1.13 0 01-1.96 1.1l-.06-.01a.82.82 0 00-.6.2c-.23.24-.34.54-.32.9.01.5.27 1 .65 1.32.6.5 1.27.55 1.72.5a2.96 2.96 0 002-1.15c.53-.71.75-1.62.6-2.55a4.02 4.02 0 00-1.64-2.66 4.4 4.4 0 00-3.37-.7 5.1 5.1 0 00-3.3 2.14 5.52 5.52 0 00-.8 4.2 6.21 6.21 0 002.66 3.96 6.55 6.55 0 005.01.9 7.29 7.29 0 004.6-3.18 7.67 7.67 0 00.97-5.85 8.4 8.4 0 00-10.34-6.31 9.46 9.46 0 00-5.88 4.21 9.83 9.83 0 00-1.14 7.5c.66 2.72 2.38 5.1 4.72 6.53a10.92 10.92 0 006.99 1.47 11.4 11.4 0 006.6-3.13l1.56 1.62a13.6 13.6 0 01-7.91 3.74z" fill="#000"/></symbol><symbol id="icon-nav-football"><mask id="a" maskUnits="userSpaceOnUse" x="5" y="5" width="34" height="34"><path d="M22 39a17 17 0 100-34 17 17 0 000 34z" fill="#64BC51"/></mask><g mask="url(#a)"><path fill="#6CBF5C" d="M0 0h44v44H0z"/><path d="M-.33 35.96L-5 33.52 15.5-7l4.67 2.45-20.5 40.51zM29.77.45L25.09-2 4.6 38.52l4.68 2.44L29.77.45zm9.63 5L34.73 3l-20.5 40.52 4.68 2.44L39.4 5.45zm9.6 5.03l-4.67-2.44-20.5 40.51L28.51 51 49 10.48z" fill="#7BD169"/><path d="M13.63 12.48l-.4 2.21a10.7 10.7 0 005.45 11.43l1.96 1.08a10.76 10.76 0 0012.55-1.64l1.61-1.53a10.73 10.73 0 002.3-12.44l-.95-2.04a10.75 10.75 0 00-11.13-6.04l-2.2.3c-4.64.59-8.34 4.1-9.2 8.67z" fill="#fff"/><path d="M29.75 13.57a18.8 18.8 0 01-.83 4.26c-.11.35-.46.72-.82.82-1.41.4-2.84.57-4.29.55a1.32 1.32 0 01-1.01-.59 24.2 24.2 0 01-1.85-3.84c-.16-.39-.02-.93.24-1.21.95-1.03 1.98-2 3.1-2.94.3-.25.83-.3 1.18-.18 1.35.52 2.61 1.2 3.76 2.07.33.22.53.68.52 1.06zm-5.54 12.7a12.25 12.25 0 01-2.7-2.55c-.2-.26-.6-.5-.93-.51a11.04 11.04 0 01-3.48-.66c-.13-.04-.24.02-.22.16.04.9.5 1.9 1.02 2.71a10.07 10.07 0 004.04 2.06 4.76 4.76 0 002.27-.97c.1-.06.1-.18 0-.25zm13.15-13.34a10.24 10.24 0 00-1.82-4.16A5.39 5.39 0 0032.9 7.6c-.13 0-.22.08-.18.2.35 1.1.5 2.27.45 3.54 0 .34.2.76.46.96.9.74 1.68 1.72 2.4 2.83.06.1.19.11.27.03.46-.6.93-1.53 1.05-2.22zm-1.95 7a11.85 11.85 0 01-3.27 1.72c-.32.1-.66.42-.76.71a11.36 11.36 0 01-1.74 3.12c-.06.1-.04.21.08.26.83.27 1.8.34 2.75.09a16.4 16.4 0 003.42-3.37c.17-.69.09-1.72-.19-2.44-.08-.13-.2-.17-.29-.1zM26.45 3.46a11.1 11.1 0 00-4.5.47c-.79.5-1.44 1.2-1.9 1.92-.1.1-.04.2.12.21 1.16.01 2.3.19 3.47.56.3.09.71.01.95-.13.96-.58 2.16-.99 3.47-1.33.13-.04.15-.14.1-.25a4.35 4.35 0 00-1.71-1.45zM14.81 17.73c.41-1.29.88-2.43 1.52-3.4.17-.25.25-.69.17-.94-.3-1.22-.42-2.38-.37-3.53.02-.15-.08-.21-.25-.14-.8.4-1.54 1.14-2.02 1.8a11.27 11.27 0 00-.72 4.49c.23.63.82 1.38 1.38 1.8.14.06.25.04.3-.08z" fill="#263638"/></g></symbol><symbol id="icon-nav-images"><path d="M40 8H4v27h36V8z" fill="#FFCF01"/><path d="M40 35L26.5 21.5l-9 9L13 26l-9 9h18-.02H40z" fill="#000"/><path d="M13 21a4 4 0 100-8 4 4 0 000 8z" fill="#EE2E24"/></symbol><symbol id="icon-nav-maps"><path d="M22 6a14 14 0 00-9.9 23.9c2.53 2.53 8.5 6.2 8.85 10.05a1.05 1.05 0 102.1 0c.35-3.85 6.32-7.52 8.85-10.05A14 14 0 0022 6z" fill="#F43"/><path d="M22 24.9a4.9 4.9 0 100-9.8 4.9 4.9 0 000 9.8z" fill="#fff"/></symbol><symbol id="icon-nav-market"><path d="M6 22c0-6.56 0-9.84 1.63-12.16a9 9 0 012.2-2.21C12.17 6 15.45 6 22 6s9.84 0 12.16 1.63a9 9 0 012.21 2.2C38 12.17 38 15.45 38 22s0 9.84-1.63 12.16a9 9 0 01-2.2 2.21C31.83 38 28.55 38 22 38s-9.84 0-12.16-1.63a9 9 0 01-2.21-2.2C6 31.83 6 28.55 6 22z" fill="url(#paint0_linear)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.96 32.95c-.82-1.93-.94-4.54-.96-8.68l8.75-10.62 5.34 2.67L18.76 23 28.78 8.97l6.68 2.67-2 8.69 4.48-3.93c.06 1.56.06 3.4.06 5.6v2.47l-7.22 7.21-5.34-2.67 2-8.02-9.35 14.03-6.68-2.67 2-8.02-6.45 8.62z" fill="url(#paint1_linear)"/></symbol><symbol id="icon-nav-music" viewBox="0 0 44 44"><path d="M11.88 8.31A17 17 0 0120.47 5v5.13a11.91 11.91 0 1013.06 14.76 11.74 11.74 0 00.14-5.24L38 16.19a17 17 0 11-26.1-7.85z" fill="#fcca00"/><path d="M34.73 10.7v.05l-2.88 4.57a12.08 12.08 0 00-4.09-3.76V22a5.77 5.77 0 11-2.55-4.8V5.27a17 17 0 019.52 5.43z" fill="#fc3f1d"/></symbol><symbol id="icon-nav-news"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 36.3h32.38L42 15.85H9.28L5 36.29z" fill="#CCC"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5 36.3h32.38V8H5v28.3z" fill="#E2E2E2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M9.63 15.07h23.12v-3.14H9.62v3.14zM21.96 19h10.79v-1.57h-10.8V19zm0 3.15h10.79v-1.57h-10.8v1.57zm0 3.15h10.79v-1.58h-10.8v1.57zm0 3.13h10.79v-1.57h-10.8v1.57zm0 3.15h10.79V30h-10.8v1.57z" fill="#000"/><path fill-rule="evenodd" clip-rule="evenodd" d="M9.63 31.58h10.74l.05-14.15H9.67l-.04 14.15z" fill="#F33"/></symbol><symbol id="icon-nav-translate"><path d="M27.68 27.63a11.32 11.32 0 100-22.63 11.32 11.32 0 000 22.63z" fill="#000"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.72 16.93c-.34-.85-1-1.51-1.91-1.94.15-.72.2-1.31.22-1.7h-1.57a9 9 0 01-.16 1.26 8.2 8.2 0 00-3.92.49 28.4 28.4 0 01-.3-2.42c4.7-.28 7.48-1.42 7.61-1.47l-.6-1.46a24 24 0 01-7.06 1.35c-.01-1.1.06-1.75.07-1.79h-1.58c-.02.3-.07.95-.06 1.84h-.15c-1.4 0-2.71-.1-3.02-.13v1.59c.46.04 1.58.13 2.85.13h.38c.06.9.18 1.92.39 3.05-2.08 1.25-3.74 3.67-2.9 5.64a2.42 2.42 0 001.93 1.49c.15.02.3.03.46.03.9 0 1.92-.36 2.9-.99a9.6 9.6 0 001.2 1.52l1.08-1.15a8.49 8.49 0 01-1.03-1.33 11.58 11.58 0 002.83-4.4c.35.2.7.52.88.98.63 1.57-.28 3.38-1.12 4.17l1.06 1.16c1.4-1.31 2.38-3.77 1.52-5.92zm-9.55 4.37a.85.85 0 01-.72-.56c-.38-.9.46-2.38 1.83-3.37.34 1.25.78 2.32 1.22 3.18-.83.55-1.69.84-2.33.75zm3.92-2.15c-.1.13-.23.25-.34.37-.4-.8-.77-1.77-1.05-2.92a7.04 7.04 0 013.17-.51c-.35.96-.9 2.03-1.78 3.06z" fill="#fff"/><path d="M16.32 39a11.32 11.32 0 100-22.63 11.32 11.32 0 000 22.63z" fill="#F33"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.49 20.58l-5.25 12.75h2.15l1.29-3.39h5.3l1.3 3.4h2.14l-5.24-12.76h-1.7zm.84 2.63l1.96 5h-3.91l1.95-5z" fill="#fff"/><path opacity=".53" d="M16.32 39a11.32 11.32 0 100-22.63 11.32 11.32 0 000 22.63z" fill="url(#paint0_radial)"/></symbol><symbol id="icon-nav-tv"><path d="M4 35h13v2h8v-2h13V13H4v22z" fill="#222"/><path fill-rule="evenodd" clip-rule="evenodd" d="M37.83 13H4v21.47L37.83 13zM27 36H15v1h12v-1z" fill="#555"/><path fill="#FC0" d="M30.71 15.43h4.86v2.43h-4.86z"/></symbol><symbol id="icon-nav-video"><path fill-rule="evenodd" clip-rule="evenodd" d="M39 22a17 17 0 11-34 0 17 17 0 0134 0z" fill="#FFD738"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.77 14.15v16l13.83-8-13.83-8z" fill="#000"/></symbol><symbol id="icon-second-news" viewBox="0 0 40 40"><path d="M0 20v20h40V0H0v20zm20-2.5V26h3.5c2.8 0 3.5.4 3.5 2 0 1.8-.7 2-5.5 2H16V19.5C16 9.7 16.1 9 18 9c1.8 0 2 .7 2 8.5z"/></symbol><symbol id="icon-voice-search" viewBox="0 0 18 18"><path d="M9 11.25A2.25 2.25 0 0011.25 9V5.062a2.25 2.25 0 00-4.5 0V9A2.25 2.25 0 009 11.25zM13.5 9h-1.125c0 .848-.32 1.668-.898 2.289a3.37 3.37 0 01-4.954.004A3.372 3.372 0 015.625 9H4.5a4.491 4.491 0 003.937 4.461v1.727h1.125v-1.727A4.494 4.494 0 0013.499 9zm0 0" fill-rule="evenodd"/></symbol><symbol id="icon-weather" viewBox="0 0 20 20"><g fill="none" fill-rule="evenodd"><path d="M9.76.55A7.03 7.03 0 11.55 9.76 7.03 7.03 0 009.76.55z" fill="url(#a)" transform="translate(3 2)"/><circle cx="7.03" cy="7.03" r="7.03" fill="url(#b)" opacity=".3" transform="translate(3 2)"/><g transform="translate(4.5 7.55)"><ellipse fill="url(#c)" opacity=".2" cx="7.5" cy="12.31" rx="6" ry="6.15"/><ellipse fill="url(#d)" opacity=".2" cx="23.25" cy="14.62" rx="3.75" ry="3.85"/><path d="M7.5 18.46c-3.31 0-6-2.75-6-6.15 0-3.4 2.69-6.16 6-6.16a6 6 0 011.8.28 6.78 6.78 0 016.45-4.9 6.84 6.84 0 016.67 8 4.4 4.4 0 011.58-.3c2.49 0 4.5 2.07 4.5 4.62a4.56 4.56 0 01-4.5 4.61H7.5z" fill="url(#e)"/><ellipse fill="url(#f)" opacity=".34" cx="7.5" cy="12.31" rx="6" ry="6.15"/><ellipse fill="url(#g)" opacity=".2" cx="24" cy="13.85" rx="4.5" ry="4.62"/><ellipse fill="url(#h)" cx="15.75" cy="8.46" rx="6.75" ry="6.92"/></g><path d="M15.7 29.63l-1.57 3.75m9.07-5.25l-1.57 3.75" stroke="#66AFEB" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/></g></symbol><symbol id="icon-yandex-browser" viewBox="0 0 48 48"><ellipse cy="24.003" cx="23.979" rx="22.821" ry="22.836" fill="#fff" stroke="url(#a)" stroke-width="2.327"/><path d="M12.85 9.508L8.608 13.75l12.4 12.401v14.742h6V26.135L39.393 13.75l-4.242-4.242L24 20.659 12.85 9.508" fill="red"/></symbol><symbol id="icon-yandex-plus"><path d="M12 20a8 8 0 007.983-8.518h-4.498l-1.036 4.942H12.12l1.059-4.942H8.567l.47-2.117h4.589L14.65 4.45A8 8 0 1012 20z" fill="url(#paint0_radial)"/><path d="M12 20a8 8 0 007.983-8.518h-4.498l-1.036 4.942H12.12l1.059-4.942H8.567l.47-2.117h4.589L14.65 4.45A8 8 0 1012 20z" fill="url(#paint1_radial)"/><path d="M16.748 5.561a8.02 8.02 0 012.808 3.804h-3.6l.793-3.804z" fill="url(#paint2_radial)"/><path d="M16.748 5.561a8.02 8.02 0 012.808 3.804h-3.6l.793-3.804z" fill="url(#paint3_radial)"/></symbol></svg>
-
-        <!-- endinject -->
-    </div>
-
-    <script>
-        let btn = document.querySelector('.close-button');
-        let block = document.querySelector('.animated-block');
-
-        block.addEventListener('click', () => {
-            block.classList.add('_moved');
-            btn.classList.add('_censored');
-        });
-
-        btn.addEventListener('click', () => {
-            block.classList.remove('_moved')
-            btn.classList.remove('_censored');
-        });
-    </script>
-
 </body>
 </html>

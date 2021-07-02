@@ -1,0 +1,16 @@
+.mail-example-link {
+    font-size: 13px;
+    line-height: 20px;
+
+    &__key {
+        color: #999;
+    }
+
+    &__value {
+        color: @color-primary;
+
+        .mail-example-link:hover & {
+            text-decoration: underline;
+        }
+    }
+}

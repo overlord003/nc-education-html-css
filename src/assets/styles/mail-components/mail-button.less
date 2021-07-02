@@ -1,0 +1,34 @@
+.mail-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    &._primary {
+        color: @white;
+        background-color: @color-primary;
+    
+        &:hover {
+            background-color: @color-primary-hover;
+        }
+    }
+
+    &._vk-btn {
+        color: @white;
+        background-color: @color-vk;
+    }
+
+    &__icon {
+        &._left {
+            margin-right: 8px;
+        }
+
+        &._right {
+            margin-left: 8px;
+        }
+    }
+}

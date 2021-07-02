@@ -1,0 +1,41 @@
+.mail-news-tabs {
+    padding-top: 12px;
+    
+    display: flex;
+
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    
+    &__tab {
+        height: 27px;
+        padding: 0 10px;
+
+        position: relative;
+
+        &:hover:after {
+            position: absolute;
+
+            right: 10px;
+            left: 10px;
+            bottom: -1px;
+            border-bottom: 2px solid rgba(0,0,0,.12);
+            content: "";
+        }
+    }
+
+    &__tab:first-of-type {
+        padding-left: 0;
+        
+        color: @color-primary;
+
+        &::after {
+            position: absolute;
+
+            right: 10px;
+            left: 0;
+            bottom: -1px;
+            color: @color-primary;
+            border-bottom: 2px solid @color-primary;
+            content: "";
+        }
+    }
+}

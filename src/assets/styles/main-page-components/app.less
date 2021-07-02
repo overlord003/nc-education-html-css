@@ -1,0 +1,123 @@
+.main-app {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main-header {
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    
+    color: black;
+    background-color: #f2f2f2;
+
+
+    &__title {
+        max-width: 730px;
+        margin-right: 64px;
+
+        align-self: flex-end;
+        
+        line-height: 96px;
+        font-size: 102px;
+        font-weight: bold;
+
+        text-align: right;
+    }
+
+    &__subtitle {
+        max-width: 388px;
+        margin: 0;
+        
+        position: absolute;
+        right: 64px;
+        bottom: 30px;
+
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: normal;
+
+        text-align: right;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    margin-top: 92px;
+    margin-left: 64px;
+    max-width: 1024px;
+
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin: 0;
+
+        font-weight: 900;
+        font-size: 54px;
+        line-height: 1.07;
+    }
+
+    &__text {
+        margin-top: 40px;
+        line-height: 34px;
+        font-size: 24px;
+    }
+}
+
+
+.my-projects {
+    max-width: 1024px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card {
+    color: currentColor;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+
+    width: 240px;
+    margin: 60px 100px 0 0;
+
+    &__title {
+        margin: 43px 0 0;
+        text-align: center;
+        line-height: 1.15;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &__description {
+        margin: 16px 0 0;
+        text-align: center;
+        line-height: 23px;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    &__image {
+        width: 160px;
+        height: 160px;
+        margin: 0 40px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

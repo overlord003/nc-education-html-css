@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Майл</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="mail-wrapper">
+        <header class="mail-header">
+            <nav class="mail-header__navigation mail-navigation">
+                <ul class="mail-navigation__list mail-projects">
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _primary _with-bg" href="#" target="_blank">Mail.ru</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Почта</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Мой Мир</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Одноклассники</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">ВКонтакте</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Игры</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Знакомства</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Новости</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Поиск</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Облако</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">VK Работа</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">Combo</a>
+                    </li>
+                    <li class="mail-projects__project mail-project">
+                        <a class="mail-project__link mail-link _with-bg" href="#" target="_blank">
+                            <span class="mail-link__content">Все проекты</span>
+                            <svg class="mail-link__icon mail-simple-icon "><use href="#icon-triangle"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mail-header__auth mail-auth">
+                <a class="mail-auth__link mail-link _with-bg" href="#" target="_blank">Регистрация</a>
+                <button class="mail-auth__button mail-button _primary" type="button">Войти</button>
+            </div>
+        </header>
+        <main class="mail-content">
+            <div class="mail-content__left-column mail-cards">
+                <div class="mail-cards__card mail-card mail-mailbox">
+                    <div class="mail-mailbox__logo mail-logo">
+                        <a class="mail-logo__link mail-link" href="#" target="_blank"></a>
+                    </div>
+                    <div class="mail-mailbox__registration mail-registration">
+                        <div class="mail-registration__apps mail-base-apps">
+                            <a class="mail-base-apps__link mail-link _primary">Почта</a>
+                            <div class="mail-base-apps__box mail-apps-box">
+                                <a class="mail-apps-box__link mail-link" href="#" target="_blank">
+                                    <svg class="mail-link__icon mail-simple-icon "><use href="#icon-camera"></use></svg>
+                                </a>
+                                <a class="mail-apps-box__link mail-link" href="#" target="_blank">
+                                    <svg class="mail-link__icon mail-simple-icon "><use href="#icon-cloud"></use></svg>
+                                </a>
+                                <a class="mail-apps-box__link mail-link" href="#" target="_blank">
+                                    <svg class="mail-link__icon mail-simple-icon "><use href="#icon-calendar"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <form class="mail-registration__form mail-form">
+                            <div class="mail-form__email-container mail-email-container">
+                                <div class="mail-email-container__input-container">
+                                    <input class="mail-input-container__input" type="text" placeholder="Имя ящика">
+                                </div>
+                                <div class="mail-email-container__select-container mail-select-container">
+                                    <select class="mail-select-container__domain">
+                                        <option value="@mail.ru">@mail.ru</option>
+                                        <option value="@inbox.ru">@inbox.ru</option>
+                                        <option value="@list.ru">@list.ru</option>
+                                        <option value="@bk.ru">@bk.ru</option>
+                                        <option value="@internet.ru">@internet.ru</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="mail-form__button mail-button _primary" type="button">
+                                Ввести пароль
+                                <svg class="mail-button__icon mail-simple-icon _right"><use href="#icon-next"></use></svg>
+                            </button>
+                            <div class="mail-form__remember-container mail-remember-container">
+                                <label class="mail-remember-container__checkbox">
+                                    <input type="checkbox" value="first-value" class="mail-checkbox__input _hidden"> 
+                                    <span class="mail-checkbox__content">Запомнить</span> 
+                                </label>
+                                <a class="mail-remember-container__link mail-link _underline" href="#" target="_blank">Забыли пароль?</a>
+                            </div>
+                        </form>
+                        <div class="mail-registration__creation-buttons mail-creation-buttons">
+                            <a class="mail-creation-buttons__link mail-link _with-bg _gray-bg _middle-padding" href="#" target="_blank">Создать почту</a>
+                            <button class="mail-creation-buttons__button mail-button _vk-btn" type="button">
+                                <svg class="mail-button__icon mail-simple-icon  _left"><use href="#icon-vk"></use></svg>
+                                VK Connect
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mail-cards__card mail-weatherbox mail-card">
+                    <div class="mail-weatherbox__title-weather mail-title-weather">
+                        <a class="mail-title-weather__city mail-link _primary" href="#" target="_blank">Москва</a>
+                        <a class="mail-title-weather__more mail-link" href="#" target="_blank">Подробнее</a>
+                    </div>
+                    <a class="mail-weatherbox__weather-situation mail-weather-situation mail-link" href="#" target="_blank">
+                        <svg class="mail-weather-situation__icon mail-weather-icon"><use href="#icon-weather"></use></svg>
+                        <span class="mail-weather-situation__temp">+21°</span>
+                        <div class="mail-weather-situation__info mail-weather-info">
+                            <span class="mail-weather-info__desc">Облачно</span>
+                            <span class="mail-weather-info__humidity">Влажность 73%</span>
+                        </div>
+                    </a>
+                    <a class="mail-weatherbox__weather-extended mail-weather-extended">
+                        <div class="mail-weather-extended__item mail-weather-item">
+                            <span class="mail-weather-item__when">Утром</span>
+                            <div class="mail-weather-item__weather-situation mail-weather-situation">
+                                <svg class="mail-weather-situation__icon mail-weather-icon-small"><use href="#icon-weather-rain"></use></svg>
+                                <span class="mail-weather-situation__temp _mini">+26°</span>
+                            </div>
+                        </div>
+                        <div class="mail-weather-extended__item mail-weather-item">
+                            <span class="mail-weather-item__when">Днём</span>
+                            <div class="mail-weather-item__weather-situation mail-weather-situation">
+                                <svg class="mail-weather-situation__icon mail-weather-icon-small"><use href="#icon-weather-storm"></use></svg>
+                                <span class="mail-weather-situation__temp _mini">+32°</span>
+                            </div>
+                        </div>
+                        <div class="mail-weather-extended__item mail-weather-item">
+                            <span class="mail-weather-item__when">Вечером</span>
+                            <div class="mail-weather-item__weather-situation mail-weather-situation">
+                                <svg class="mail-weather-situation__icon mail-weather-icon-small"><use href="#icon-weather-rain"></use></svg>
+                                <span class="mail-weather-situation__temp _mini">+24°</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="mail-cards__card mail-stocksbox mail-card">
+                    <a class="mail-stocksbox__stock mail-stock mail-link">
+                        <svg class="mail-stock__icon mail-simple-icon "><use href="#icon-dollar"></use></svg>
+                        <span class="mail-stock__info stock-info">
+                            <span class="mail-stock-info__cur">72.17</span>
+                            <span class="mail-stock-info__dif">
+                                -0.16
+                                <svg class="mail-simple-icon"><use href="#icon-triangle"></use></svg>
+                            </span>
+                        </span>
+                    </a>
+                    <a class="mail-stocksbox__stock mail-stock mail-link">
+                        <svg class="mail-stock__icon mail-simple-icon "><use href="#icon-dollar"></use></svg>
+                        <span class="mail-stock__info stock-info">
+                            <span class="mail-stock-info__cur">86.19</span>
+                            <span class="mail-stock-info__dif">
+                                -0.14
+                                <svg class="mail-simple-icon"><use href="#icon-triangle"></use></svg>
+                            </span>
+                        </span>
+                    </a>
+                    <a class="mail-stocksbox__stock mail-stock mail-link">
+                        <svg class="mail-stock__icon mail-simple-icon "><use href="#icon-dollar"></use></svg>
+                        <span class="mail-stock__info stock-info">
+                            <span class="mail-stock-info__cur">76.17</span>
+                            <span class="mail-stock-info__dif">
+                                -0.59
+                                <svg class="mail-simple-icon"><use href="#icon-triangle"></use></svg>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="mail-content__right-column mail-main-content">
+                <section class="mail-main-content__search mail-search-container">
+                    <div class="mail-search-container__categories mail-categories">
+                        <a class="mail-categories__link mail-link _primary" href="#" target="_blank">Поиск в интернете</a>
+                        <a class="mail-categories__link mail-link" href="#" target="_blank">Соцсети</a>
+                        <a class="mail-categories__link mail-link" href="#" target="_blank">Картинки</a>
+                        <a class="mail-categories__link mail-link" href="#" target="_blank">Видео</a>
+                        <a class="mail-categories__link mail-link" href="#" target="_blank">Ответы</a>
+                    </div>
+                    <form class="mail-search-container__form mail-search-form">
+                        <svg class="mail-search-form__icon mail-simple-icon "><use href="#icon-search"></use></svg>
+                        <input class="mail-search-form__input" type="search">
+                        <div class="mail-search-form__bg"></div>
+                        <button class="mail-search-form__button mail-button" type="submit">Найти</button>
+                        <a class="mail-search-form__example-link mail-example-link mail-link" href="#" target="_blank">
+                            <span class="mail-example-link__key">Сейчас ищут:</span>
+                            <span class="mail-example-link__value">озон</span>
+                        </a>
+                    </form>
+                </section>
+                <section class="mail-main-content__news-tabs mail-news-tabs">
+                    <a class="mail-news-tabs__tab mail-link _primary" href="#" target="_blank">Новости</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Москва</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Спорт</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Леди</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Авто</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Кино</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Hi-Tech</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Игры</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Дети</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Здоровье</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Дом</a>
+                    <a class="mail-news-tabs__tab mail-link" href="#" target="_blank">Питомцы</a>
+                </section>
+                <section class="mail-main-content__news-content mail-news-content">
+                    <div class="mail-news-content__left-column mail-news-container">
+                        <ul class="mail-news-container__news-list mail-news-list">
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link-container mail-link-container mail-link" href="#" target="_blank">
+                                    <img class="mail-link-container__img" src="https://r.mradx.net/pictures/97/66ABA8.jpg">
+                                    <div class="mail-link-container__content mail-link-content">
+                                        <p class="mail-link-content__title">Посол назвал «нулевым дном» нынешние отношения Лондона и Москвы</p>
+                                        <span class="mail-link-content__content">
+                                            По словам Келина, самое страшное в инциденте с эсминцем — что Лондон пытается подкрепить политическую позицию военной провокацией
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Эксперт: Головин прогрессирует, остальные игроки деградировали
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Турция приступила к строительству канала в обход Босфора
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Режиссер Владимир Меньшов заразился коронавирусом 
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Ученые нашли последнее «убежище» похожего на пальцы гриба
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    В Перми посреди улицы катались на сап-борде
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Пара из Австралии отпраздновала «дубовую» свадьбу
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Более 70 человек заразились COVID-19 в детском лагере в Туве 
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Первая европейская страна отменила все COVID-ограничения
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Британский министр ушел в отставку после поцелуя с коллегой
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Российский бизнесмен из списка Forbes умер от коронавируса 
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__title-link mail-link _title" href="#" target="_blank">Спорт</a>
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Команды-сенсации Евро. Даже Россия была в их числе
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__title-link mail-link _title" href="#" target="_blank">Авто</a>
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Чем заняться в Гороховце: топ интересных мест
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__title-link mail-link _title" href="#" target="_blank">Кино</a>
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Деревянко показал неузнаваемую Брежневу на съемках «Бендера»
+                                </a>
+                            </li>
+                            <li class="mail-news-list__news mail-news-item">
+                                <a class="mail-news-item__title-link mail-link _title" href="#" target="_blank">Дети</a>
+                                <a class="mail-news-item__link mail-link" href="#" target="_blank">
+                                    Мать назвала ребенка в честь аэропорта, где прошли роды
+                                </a>
+                            </li>
+                        </ul>
+                        <section class="mail-news-container__advertising-card mail-advertising-card mail-card">
+                            <a class="mail-advertising-card__link mail-link _full" href="#" target="_blank"></a>
+                            <img class="mail-advertising-card__img" src="https://r.mradx.net/img/5E/7C6894.png">
+                            <div class="mail-advertising-card__description description">
+                                <span class="mail-description__title">Любимая доставка еды</span>
+                                <span class="mail-description__content">Закажите пиццу у нас, и она приедет к вам обжигающе горячей!</span>
+                            </div>
+                            <span class="mail-advertising-card__title">Реклама myTarget</span>
+                        </section>
+                    </div>
+                    <div class="mail-news-content__right-column mail-advertising-container">
+                        <section class="mail-advertising-container__advertising-card mail-advertising-card mail-card _vertical _overflow">
+                            <a class="mail-advertising-card__link mail-link _full" href="#" target="_blank"></a>
+                            <img class="mail-advertising-card__img" src="https://avatars.mds.yandex.net/get-direct/4411921/bflD3NYGl4SIGzE3MsKbNw/wy300">
+                            <div class="mail-advertising-card__description mail-description">
+                                <span class="mail-description__title">Эта игра поразила</span>
+                                <span class="mail-description__content">Скачав эту игру геймеры потеряли дар речи. Невероятно, что она еще...</span>
+                            </div>
+                            <div class="mail-advertising-card__meta mail-meta">
+                                <span class="mail-meta__domain">dead-gamer.ru</span>
+                                <span class="mail-meta__category">Реклама</span>
+                            </div>
+                        </section>
+                        <section class="mail-advertising-container__mail-card mail-mail-card mail-card">
+                            <a class="mail-mail-card__link mail-link _full" href="#" target="_blank"></a>
+                            <img class="mail-mail-card__img" src="https://r.mradx.net/img/67/6AAE9E.png">
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div class="mail-svg-store _hidden">
+        <!-- inject:svg -->
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-calendar" viewBox="0 0 16 16"><path d="M12 15H2a2 2 0 01-2-2V3a2 2 0 011.999-2 1 1 0 012 0h6a1 1 0 012 0H12a2 2 0 012 2v10a2 2 0 01-2 2zM2.999 3a1 1 0 110 2 1 1 0 010-2zm8 0a1 1 0 110 2 1 1 0 010-2z" fill-rule="evenodd"/></symbol><symbol id="icon-camera" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 14H3c-1.656 0-3-1.344-3-3V5c0-1.656 1.344-3 3-3h5c1.656 0 3 1.344 3 3v.938l3.355-2.702A1 1 0 0116 4v8a1 1 0 01-1.661.75L11 10.061V11c0 1.656-1.344 3-3 3zm-5-4a1 1 0 110 2 1 1 0 010-2z"/></symbol><symbol id="icon-cloud" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M5.555 4.598a3.735 3.735 0 013.512-2.465 3.735 3.735 0 013.69 4.299A3.737 3.737 0 0116 10.133a3.735 3.735 0 01-3.733 3.734 3.72 3.72 0 01-2.508-.969 3.187 3.187 0 01-2.292.969 3.19 3.19 0 01-2.134-.816 3.188 3.188 0 01-2.133.816 3.202 3.202 0 01-1.451-6.053 2.668 2.668 0 013.806-3.216z"/></symbol><symbol id="icon-dollar" viewBox="0 0 16 16"><path d="M6.996 1.188v-.129a1.003 1.003 0 01.929-.997c.072-.003.071-.003.143 0 .095.01.187.027.278.06a1.005 1.005 0 01.65.937v.185c.819.13 1.616.403 2.348.791.31.165.609.345.899.542.195.133.384.275.576.413l.095.069a1.245 1.245 0 01.476 1.037 1.259 1.259 0 01-.972 1.165c-.29.066-.6.024-.863-.115-.085-.045-.163-.102-.241-.158-.133-.097-.265-.195-.399-.29a13.257 13.257 0 00-.247-.165 5.82 5.82 0 00-1.672-.741v2.906c.191.047.382.093.572.142l.378.099c.185.052.371.105.555.163.854.27 1.722.639 2.339 1.311a2.917 2.917 0 01.646 1.114c.075.24.121.49.135.741.018.344-.028.691-.116 1.023a4.286 4.286 0 01-1.157 1.961 5.054 5.054 0 01-1.924 1.144 6.858 6.858 0 01-1.418.307c-.002.1-.006.2-.012.3a1.016 1.016 0 01-.103.385.997.997 0 01-1.894-.427l-.004-.262a6.61 6.61 0 01-2.279-.681 5.592 5.592 0 01-1.256-.892 5.097 5.097 0 01-1.05-1.398c-.126-.252-.238-.515-.237-.802a1.245 1.245 0 01.355-.87 1.262 1.262 0 011.501-.221 1.271 1.271 0 01.507.525c.032.068.058.138.089.206.087.179.196.344.323.497a3.075 3.075 0 00.655.582 3.76 3.76 0 001.395.529V8.759c-.815-.239-1.622-.527-2.355-.961-.539-.318-1.038-.724-1.392-1.245a3.017 3.017 0 01-.367-.739c-.3-.906-.112-1.929.395-2.725.251-.396.583-.735.966-1.005.806-.57 1.781-.812 2.753-.896zm2 8.086v2.907c.244-.04.485-.1.717-.185.274-.1.536-.236.762-.421.151-.124.285-.27.392-.433.072-.109.167-.39.131-.718-.051-.451-.56-.684-.723-.751a7.362 7.362 0 00-.675-.232c-.2-.06-.401-.115-.604-.167zm-2-5.576l-.119.016c-.273.04-.545.102-.801.205-.17.068-.334.155-.475.272-.09.074-.291.311-.317.567-.043.417.283.653.353.705.149.112.311.208.476.294a6.491 6.491 0 00.883.377V3.698z" fill="23333"/></symbol><symbol id="icon-next" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M12.696 7.256L9.657 4.217a1 1 0 00-1.415 1.414l1.344 1.344H3.949a1.001 1.001 0 000 2h5.637l-1.344 1.343a1.002 1.002 0 000 1.415c.391.39 1.024.39 1.415 0l3.039-3.04A.993.993 0 0013 7.975a.997.997 0 00-.293-.708l-.011-.011z"/></symbol><symbol id="icon-search"><path fill="#A6A6A6" fill-rule="evenodd" d="M12.71 11.085A7.008 7.008 0 007.008 0a7.008 7.008 0 104.076 12.71l2.954 2.953a1.149 1.149 0 001.625-1.624l-2.955-2.954zM7.007 2.441a4.567 4.567 0 110 9.135 4.567 4.567 0 010-9.135z"/></symbol><symbol id="icon-triangle"><path fill-rule="evenodd" d="M5.171 7.226A.75.75 0 015.75 6h4.5a.75.75 0 01.579 1.226l-2.223 2.966a.75.75 0 01-1.212 0L5.171 7.226z"/></symbol><symbol id="icon-vk"><path fill-rule="evenodd" d="M16 5.547C16 1.067 14.933 0 10.453 0H5.547C1.067 0 0 1.067 0 5.547v4.906C0 14.933 1.067 16 5.547 16h4.906C14.933 16 16 14.933 16 10.453V5.547zM3 5h1.167c.298 0 .41.13.522.454.57 1.662 1.533 3.114 1.928 3.114.148 0 .216-.068.216-.445V6.405c-.026-.489-.197-.7-.324-.857-.078-.097-.14-.172-.14-.28 0-.13.112-.268.298-.268H8.5c.247 0 .333.132.333.429V7.74c0 .247.108.334.182.334.148 0 .272-.087.544-.359.84-.939 1.433-2.385 1.433-2.385A.504.504 0 0111.5 5h1.167c.353 0 .427.182.353.429-.138.631-1.374 2.403-1.55 2.653l-.02.029c-.124.198-.173.297 0 .52.06.084.19.212.34.357.153.15.325.32.463.483.501.563.879 1.039.984 1.367.096.329-.07.495-.404.495h-1.166c-.313 0-.47-.175-.81-.553-.144-.16-.321-.357-.557-.593-.692-.667-.989-.754-1.162-.754-.234 0-.305.067-.305.4v1.047c0 .287-.091.453-.833.453-1.236 0-2.594-.75-3.558-2.134C2.996 7.172 2.6 5.639 2.6 5.33c0-.173.067-.33.4-.33z"/></symbol><symbol id="icon-weather-rain" viewBox="0 0 40 40"><mask id="a" height="40" maskUnits="userSpaceOnUse" width="40" x="0" y="0"><path d="M0 0h40v40H0z" fill="#fff"/></mask><mask id="b" height="18" maskUnits="userSpaceOnUse" width="25" x="15" y="12"><path clip-rule="evenodd" d="M40 21a9.02 9.02 0 00-2.635-6.364A9.016 9.016 0 0031 12H15v18h16a9.016 9.016 0 006.365-2.636A9.02 9.02 0 0040 21z" fill="#fff" fill-rule="evenodd"/></mask><g mask="url(#a)"><g clip-rule="evenodd" fill-rule="evenodd"><path d="M16.862 32.907A1.433 1.433 0 0015.526 32h-.096c-.472 0-.92.238-1.192.634-.264.397-.32.901-.144 1.346.656 1.634 1.552 3.878 2.048 5.113.216.548.744.907 1.336.907h.096c.472 0 .92-.238 1.192-.634.264-.397.32-.901.144-1.346-.656-1.634-1.552-3.878-2.048-5.113zM30.862 32.907A1.433 1.433 0 0029.526 32h-.096c-.472 0-.92.238-1.192.634-.264.397-.32.901-.144 1.346.656 1.634 1.552 3.878 2.048 5.113.216.548.744.907 1.336.907h.096c.472 0 .92-.238 1.192-.634.264-.397.32-.901.144-1.346-.656-1.634-1.552-3.878-2.048-5.113z" fill="#4f96ff"/><path d="M9.8 35a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM21.8 35a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM25.3 40a2 2 0 100-4 2 2 0 000 4zM36.3 36a2 2 0 100-4 2 2 0 000 4z" fill="#0dcaf2"/><path d="M40 21a9.02 9.02 0 00-2.635-6.364A9.016 9.016 0 0031 12H15v18h16a9.016 9.016 0 006.365-2.636A9.02 9.02 0 0040 21z" fill="#acacac"/><path d="M40 21a9.02 9.02 0 00-2.635-6.364A9.016 9.016 0 0031 12H15v18h16a9.016 9.016 0 006.365-2.636A9.02 9.02 0 0040 21z" fill="#d5d5d5"/></g><g mask="url(#b)"><path clip-rule="evenodd" d="M24 0v19h4.19c2.31 0 4.4-1.377 5.31-3.5s3-3.5 5.31-3.5H40V0z" fill="#999" fill-rule="evenodd"/></g><path clip-rule="evenodd" d="M15 30c8.284 0 15-6.716 15-15 0-8.285-6.716-15-15-15C6.716 0 0 6.715 0 15c0 8.284 6.716 15 15 15z" fill="#d5d5d5" fill-rule="evenodd"/></g></symbol><symbol id="icon-weather-storm" viewBox="0 0 40 40"><mask id="a" height="40" maskUnits="userSpaceOnUse" width="40" x="0" y="0"><path d="M0 0h40v40H0z" fill="#fff"/></mask><mask id="b" height="18" maskUnits="userSpaceOnUse" width="25" x="15" y="12"><path clip-rule="evenodd" d="M40 21a9.02 9.02 0 00-2.635-6.364A9.016 9.016 0 0031 12H15v18h16a9.016 9.016 0 006.365-2.636A9.02 9.02 0 0040 21z" fill="#fff" fill-rule="evenodd"/></mask><g mask="url(#a)"><path clip-rule="evenodd" d="M40 21a9.02 9.02 0 00-2.635-6.364A9.016 9.016 0 0031 12H15v18h16a9.016 9.016 0 006.365-2.636A9.02 9.02 0 0040 21z" fill="#acacac" fill-rule="evenodd"/><path clip-rule="evenodd" d="M40 21a9.02 9.02 0 00-2.635-6.364A9.016 9.016 0 0031 12H15v18h16a9.016 9.016 0 006.365-2.636A9.02 9.02 0 0040 21z" fill="#d5d5d5" fill-rule="evenodd"/><g mask="url(#b)"><path clip-rule="evenodd" d="M24 0v19h4.19c2.31 0 4.4-1.377 5.31-3.5s3-3.5 5.31-3.5H40V0z" fill="#999" fill-rule="evenodd"/></g><g clip-rule="evenodd" fill-rule="evenodd"><path d="M15 30c8.284 0 15-6.716 15-15 0-8.285-6.716-15-15-15C6.716 0 0 6.715 0 15c0 8.284 6.716 15 15 15z" fill="#d5d5d5"/><path d="M17.44 23.323c.24-.787.97-1.323 1.8-1.323h6.58c.31 0 .61.125.83.347.23.222.35.523.35.837a2.8 2.8 0 01-.45 1.515C25.5 26.264 23.01 29.987 23 30h3.82c.32 0 .61.182.75.466.13.283.08.617-.13.855-1.78 2.042-4.56 5.736-6.89 8.398a.828.828 0 01-1 .189.81.81 0 01-.42-.916c.68-2.465 1.47-5.362 1.47-5.362l-5.54 1.558c-.28.08-.59.004-.8-.198s-.3-.5-.22-.779c0 0 2.41-7.728 3.4-10.888z" fill="#ffdc55"/></g></g></symbol><symbol id="icon-weather" viewBox="0 0 40 40"><mask id="a" height="14" maskUnits="userSpaceOnUse" width="18" x="22" y="22"><path clip-rule="evenodd" d="M39.202 28.524A6.521 6.521 0 0032.68 22H22.2v13.05h10.48a6.521 6.521 0 006.522-6.524v-.002z" fill="#fff" fill-rule="evenodd"/></mask><g clip-rule="evenodd" fill-rule="evenodd"><path d="M28.52 14.612a.788.788 0 01.88-.364c.34.09.57.398.57.75.05 0 .05.001.05.002 0 8.279-6.72 15-15 15-8.28 0-15-6.721-15-15s6.72-15 15-15c.37.001.7.251.79.609a.828.828 0 01-.38.922A9.351 9.351 0 0011.02 9.5c0 5.243 4.25 9.5 9.5 9.5 3.36 0 6.32-1.75 8-4.388z" fill="#ffdc55"/><path d="M39.202 28.524A6.521 6.521 0 0032.68 22H22.2v13.05h10.48a6.521 6.521 0 006.522-6.524v-.002z" fill="#acacac"/><path d="M39.202 28.524A6.521 6.521 0 0032.68 22H22.2v13.05h10.48a6.521 6.521 0 006.522-6.524v-.002z" fill="#d5d5d5"/></g><g mask="url(#a)"><path clip-rule="evenodd" d="M27.69 14.3v13.775h2.419c2.023 0 3.859-1.21 4.65-3.076a3.29 3.29 0 013.025-2h1.425v-8.7z" fill="#999" fill-rule="evenodd"/></g><path clip-rule="evenodd" d="M22.205 35c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10z" fill="#d5d5d5" fill-rule="evenodd"/></symbol></svg>
+
+        <!-- endinject -->
+    </div>
+</body>
+</html>
