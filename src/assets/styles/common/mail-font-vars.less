@@ -1,0 +1,57 @@
+@mail-primary-font: Helvetica, Arial, sans-serif;
+@mail-secondary-font: Arial, sans-serif;
+
+@mail-font-weight-regular: 400;
+@mail-font-weight-medium: 500; 
+@mail-font-weight-bold: 700;
+
+@mail-font-size-xxs: 11px;
+@mail-font-size-xs: 13px;
+@mail-font-size-s: 15px;
+@mail-font-size-m: 17px;
+@mail-font-size-l: 24px;
+
+.mail-font-default() {
+    font-family: @mail-primary-font;
+    font-style: normal;
+}
+
+.mail-font-regular(@font-weight, @font-size) {
+    font-weight: @font-weight;
+    font-size: @font-size;
+}
+
+.mail-font-regular-xxsmall() {
+    .mail-font-default();
+    .mail-font-regular(@mail-font-weight-regular, @mail-font-size-xxs);
+}
+
+.mail-font-regular-xsmall() {
+    .mail-font-default();
+    .mail-font-regular(@mail-font-weight-regular, @mail-font-size-xs);
+}
+
+.mail-font-regular-small() {
+    .mail-font-default();
+    .mail-font-regular(@mail-font-weight-regular, @mail-font-size-s);
+}
+
+.mail-font-regular-medium() {
+    .mail-font-default();
+    .mail-font-regular(@mail-font-weight-regular, @mail-font-size-m);
+}
+
+.mail-font-regular-large() {
+    .mail-font-default();
+    .mail-font-regular(@mail-font-weight-regular, @mail-font-size-l);
+}
+
+.mail-font-bold-small() {
+    .mail-font-default();
+    .mail-font-regular(@mail-font-weight-bold, @mail-font-size-s);
+}
+
+.mail-font-bold-large() {
+    .mail-font-default();
+    .mail-font-regular(@mail-font-weight-bold, @mail-font-size-l);
+}

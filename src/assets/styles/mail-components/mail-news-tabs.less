@@ -3,7 +3,12 @@
     
     display: flex;
 
-    border-bottom: 1px solid rgba(0,0,0,.12);
+    .mail-font-regular-small();
+    line-height: 20px;
+    
+    color: @mail-color-secondary;
+
+    border-bottom: 1px solid @mail-line-color;
     
     &__tab {
         height: 27px;
@@ -17,7 +22,7 @@
             right: 10px;
             left: 10px;
             bottom: -1px;
-            border-bottom: 2px solid rgba(0,0,0,.12);
+            border-bottom: 2px solid @mail-line-color;
             content: "";
         }
     }
@@ -25,7 +30,7 @@
     &__tab:first-of-type {
         padding-left: 0;
         
-        color: @color-primary;
+        color: @mail-color-primary;
 
         &::after {
             position: absolute;
@@ -34,7 +39,7 @@
             left: 0;
             bottom: -1px;
             color: @color-primary;
-            border-bottom: 2px solid @color-primary;
+            border-bottom: 2px solid @mail-color-primary;
             content: "";
         }
     }

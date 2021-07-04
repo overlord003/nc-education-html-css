@@ -2,26 +2,26 @@
     color: currentColor;
     text-decoration: none;
 
-    // Для главных ссылок в разделе (Mail.ru в header)
+    // Для главных ссылок в разделе
     &._primary {
-        font-weight: @font-weight-bold;
+        font-weight: @mail-font-weight-bold;
     }
 
     // Для ссылок с фоном при наведенеии (все в header)
     &._with-bg {
         height: 28px;
         padding: 4px 8px;
-    
-        border-radius: @border-radius;
-    
-        box-sizing: border-box;
-    
+
         display: inline-flex;
         justify-content: center;
         align-items: center;
     
+        box-sizing: border-box;
+
+        border-radius: @border-radius;
+        
         &:hover {
-            background-color: @light-gray;
+            background-color: @mail-light-gray;
         }
     }
 

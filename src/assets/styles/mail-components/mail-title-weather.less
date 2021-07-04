@@ -1,0 +1,28 @@
+.mail-title-weather {
+    display: flex;
+    justify-content: space-between;
+
+    &__city {
+        .mail-font-regular-small();
+        line-height: 20px;
+
+        color: @mail-color-secondary;
+
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__more {
+        font-size: 13px;
+        color: @mail-color-primary;
+
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
