@@ -2,12 +2,10 @@
     color: currentColor;
     text-decoration: none;
 
-    // Для главных ссылок в разделе
     &._primary {
         font-weight: @mail-font-weight-bold;
     }
 
-    // Для ссылок с фоном при наведенеии (все в header)
     &._with-bg {
         height: 28px;
         padding: 4px 8px;
@@ -25,12 +23,11 @@
         }
     }
 
-    // Кристина ты же не забудешь поправить цвет при наведении да?
     &._gray-bg {
-        background-color: @mail-light-gray;
+        background-color: @mail-gray-button;
 
         &:hover {
-            background-color: @mail-light-gray;
+            background-color: @mail-gray-button-hover;
         }
     }
 

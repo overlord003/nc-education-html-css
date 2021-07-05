@@ -29,45 +29,6 @@
         opacity: .32;
     }
     /* Собсна вот */
-
-    /* У ссылок в виде погодных карточек утро, день, вечер, ночь. */
-    &._card {
-        display: inline-block;
-    }
-
-    &._card &__title{
-        display: block;
-        font-size: 9px;
-        text-align: center;
-        color: @yandex-light-gray;
-    }
-
-    &._card &__icon {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin: -4px 2px 0;
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: 20px 20px;
-    }
-
-    &._card &__content{
-        display: inline;
-
-        .yandex-font-regular-xsmall();
-        line-height: 1.17;
-        white-space: nowrap;
-        
-        color: @yandex-black;
-    }
-
-    &._card:hover &__content{
-        color: @yandex-dark-red;
-    }
-
-    /* Я умерла на карточках */
     
     /* _container styles start - для значков над панелью поиска */
     &._container {
@@ -112,7 +73,6 @@
     &__first-letter {
         color: @yandex-dark-red;
     }
-
 
     &._y-plus {
         position: absolute;

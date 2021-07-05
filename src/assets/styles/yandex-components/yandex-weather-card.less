@@ -1,0 +1,37 @@
+.yandex-weather-card {
+    display: inline-block;
+    
+    &__title{
+        display: block;
+        font-size: 9px;
+        text-align: center;
+        color: @yandex-light-gray;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: -4px 2px 0;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 20px 20px;
+    }
+
+    &__content{
+        display: inline;
+
+        .yandex-font-regular-xsmall();
+        line-height: 1.17;
+        white-space: nowrap;
+        
+        color: @yandex-black;
+    }
+
+    &:hover &__content{
+        color: @yandex-dark-red;
+    }
+
+    /* Я умерла на карточках */
+}
