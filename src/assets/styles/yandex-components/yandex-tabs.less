@@ -1,0 +1,40 @@
+.yandex-tabs {
+    display: flex;
+    align-items: center;
+
+    color: @yandex-blue;
+
+    &__title {
+        margin-top: 0;
+        margin-right: 12px;
+        margin-bottom: 8px;
+    }
+    
+    &__title:last-of-type {
+        margin-right: 0;
+    }
+
+    &__button {
+        width: 24px;
+        height: 24px;
+    
+        margin-top: -7px;
+        margin-bottom: -7px;
+    
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z' fill='%23000' fill-rule='evenodd'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    
+        cursor: pointer;
+    
+        opacity: 0;
+
+        .container:hover & {
+            opacity: .25;
+        }
+        
+        .container:hover &:hover {
+            opacity: 1;
+        }
+    }
+}

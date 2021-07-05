@@ -1,0 +1,68 @@
+@yandex-font: 'Yandex Sans Text', 'Helvetica Neue', Arial, sans-serif;
+@verdana-font: Verdana, Arial, Helvetica, sans-serif;
+
+@yandex-font-weight-regular: 400;
+@yandex-font-weight-medium: 500; 
+@yandex-font-weight-bold: 700;
+
+@yandex-font-size-xxs: 11px;
+@yandex-font-size-xs: 12px;
+@yandex-font-size-s: 13px;
+@yandex-font-size-m: 14px;
+@yandex-font-size-l: 19px;
+
+
+.yandex-font-default() {
+    font-family: @yandex-font;
+    font-style: normal;
+}
+
+.yandex-font-regular(@font-weight, @font-size) {
+    font-weight: @font-weight;
+    font-size: @font-size;
+}
+
+.yandexl-font-regular-xxsmall() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-regular, @yandex-font-size-xxs);
+}
+
+.yandex-font-regular-xsmall() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-regular, @yandex-font-size-xs);
+}
+
+.yandex-font-regular-small() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-regular, @yandex-font-size-s);
+}
+
+.yandex-font-regular-medium() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-regular, @yandex-font-size-m);
+}
+
+.yandex-font-regular-large() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-regular, @yandex-font-size-l);
+}
+
+.yandex-font-bold-small() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-bold, @yandex-font-size-s);
+}
+
+.yandex-font-bold-large() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-bold, @yandex-font-size-l);
+}
+
+.yandex-font-medium-small() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-medium, @yandex-font-size-s);
+}
+
+.yandex-font-medium-large() {
+    .yandex-font-default();
+    .yandex-font-regular(@yandex-font-weight-medium, @yandex-font-size-l);
+}

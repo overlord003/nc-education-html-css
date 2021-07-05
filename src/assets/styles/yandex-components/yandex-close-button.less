@@ -1,0 +1,16 @@
+.yandex-close-button {
+    width: 24px;
+    height: 24px;
+
+    display: none;;
+
+    .yandex-notification-block:hover & {
+        &._censored {
+            display: inline;
+            transition: display .1s ease-out;
+            transition-delay: .15s;
+
+            cursor: pointer;
+        }
+    }
+}

@@ -34,10 +34,20 @@ gulp.task("svgstore", function () {
 		return file.contents.toString();
 	}
 
-	return gulp
-		.src("./src/index.html")
-		.pipe(inject(svgs, {transform: fileContents}))
-		.pipe(gulp.dest("./src"));
+	return mergeStream(
+		gulp
+			.src("./src/index.html")
+			.pipe(inject(svgs, {transform: fileContents}))
+			.pipe(gulp.dest("./src")),
+		gulp
+			.src("./src/pages/yandex-main-page.html")
+			.pipe(inject(svgs, {transform: fileContents}))
+			.pipe(gulp.dest("./src/pages/")),
+		gulp
+			.src("./src/pages/mail-main-page.html")
+			.pipe(inject(svgs, {transform: fileContents}))
+			.pipe(gulp.dest("./src/pages/")),
+	);
 });
 
 gulp.task("less", function () {
