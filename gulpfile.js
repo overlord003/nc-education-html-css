@@ -47,6 +47,10 @@ gulp.task("svgstore", function () {
 			.src("./src/pages/mail-main-page.html")
 			.pipe(inject(svgs, {transform: fileContents}))
 			.pipe(gulp.dest("./src/pages/")),
+		gulp
+			.src("./src/pages/css-tricks-main-page.html")
+			.pipe(inject(svgs, {transform: fileContents}))
+			.pipe(gulp.dest("./src/pages/"))
 	);
 });
 
@@ -65,7 +69,8 @@ gulp.task("html", function () {
 	return mergeStream(
 		gulp.src("./src/index.html").pipe(gulp.dest("./dist")),
 		gulp.src("./src/pages/yandex-main-page.html").pipe(gulp.dest("./dist")),
-		gulp.src("./src/pages/mail-main-page.html").pipe(gulp.dest("./dist"))
+		gulp.src("./src/pages/mail-main-page.html").pipe(gulp.dest("./dist")),
+		gulp.src("./src/pages/css-tricks-main-page.html").pipe(gulp.dest("./dist"))
 	);
 });
 
@@ -82,6 +87,7 @@ gulp.task("serve", function () {
 
 	gulp.watch("./src/assets/styles/**/*.less").on("change", series("less"));
 	gulp.watch("./src/index.html").on("change", series("html"));
+	gulp.watch("./src/pages/*.html").on("change", series("html"));
 	gulp.watch("./dist/style.css").on("change", browserSync.reload);
 	gulp.watch("./dist/index.html").on("change", browserSync.reload);
 });

@@ -1,0 +1,51 @@
+@css-primary-font: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system, 
+                   BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, 
+                   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+@css-font-weight-regular: 400;
+@css-font-weight-medium: 500; 
+@css-font-weight-bold: 700;
+@css-font-weight-very-bold: 800;
+
+
+@css-font-size-xxs: .66rem;
+@css-font-size-xs: 13px;
+@css-font-size-s: 16px;
+@css-font-size-m: 1.2rem;
+@css-font-size-l: 2.5rem;
+
+.css-font-default() {
+    font-family: @css-primary-font;
+    font-style: normal;
+}
+
+.css-font-regular(@font-weight, @font-size) {
+    font-weight: @font-weight;
+    font-size: @font-size;
+}
+
+.css-font-regular-small() {
+    .css-font-default();
+    .css-font-regular(@css-font-weight-regular, @css-font-size-s);
+}
+
+.css-font-regular-medium() {
+    .css-font-default();
+    .css-font-regular(@css-font-weight-regular, @css-font-size-m);
+}
+
+.css-font-medium-xsmall() {
+    .css-font-default();
+    .css-font-regular(@css-font-weight-medium, @css-font-size-xs);
+}
+
+.css-font-bold-large() {
+    .css-font-default();
+    .css-font-regular(@css-font-weight-bold, @css-font-size-l);
+}
+
+.css-font-very-bold-xxsmall() {
+    .css-font-default();
+    .css-font-regular(@css-font-weight-very-bold, @css-font-size-xxs);
+}
+

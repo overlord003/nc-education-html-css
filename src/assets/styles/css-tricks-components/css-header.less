@@ -1,0 +1,33 @@
+.css-header {
+    margin: 0 0 var(--gap);
+    padding: 0 var(--gap) 0;
+
+    display: flex;
+
+    position: relative;
+
+    color: @css-header-text-color;
+
+    line-height: 27px;
+
+    &::after {
+        content: "";
+
+        width: 100%;
+        height: 4px;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        // Максим, а тут надо каждый цвет выносить в colors?
+        background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+    }
+
+    &__middle-area {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+}
