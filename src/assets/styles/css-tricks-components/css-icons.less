@@ -1,9 +1,19 @@
+@keyframes spin-me {
+    100% {
+        transform: rotate(2turn);
+    }
+}
+
 .css-star-icon {
     width: 25px;
     height: 25px;
     margin-right: 8px;
 
     fill: @css-header-text-color;
+
+    &[data-spin-me="true"] {
+        animation: spin-me 1s forwards;
+    }
 }
 
 .css-logo-icon {
@@ -19,6 +29,9 @@
     height: 32px;
 
     fill: currentColor;
+
+    -webkit-filter: drop-shadow(0 2px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,.3));
 }
 
 .css-avatar-icon {

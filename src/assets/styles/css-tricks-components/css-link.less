@@ -1,7 +1,21 @@
 .css-link {
     text-decoration: none;
 
+    &:hover {
+        opacity: .66;
+    }
+
     &._primary {
         font-weight: @css-font-weight-bold;
+    }
+
+    &__image {
+        &._with-rotate {
+            transition: .15s;
+
+            &:hover {
+                transform: rotate(-2deg) translateY(-5px) scale(1.025);
+            }
+        }
     }
 }
