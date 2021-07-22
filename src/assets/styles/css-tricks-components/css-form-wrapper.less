@@ -1,0 +1,26 @@
+.css-form-wrapper {
+    padding: 1.5rem;
+    margin: -3rem 0 0;
+    
+    position: relative;
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    color: @css-white;
+    background: @css-form-bg-color;
+}
+
+.css-form {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 20px;
+        height: 48px;
+        background: #909090;
+        -webkit-clip-path: polygon(100% 0,100% 100%,0 100%);
+        clip-path: polygon(100% 0,100% 100%,0 100%);
+    }
+}

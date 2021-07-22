@@ -12,13 +12,15 @@
 @css-font-size-xs: 13px;
 @css-font-size-s: 16px;
 @css-font-size-m: 1.2rem;
-@css-font-size-l: 2.5rem;
+@css-font-size-l: 1.8rem;
+@css-font-size-xl: 2.5rem;
 
 .css-font-default() {
     font-family: @css-primary-font;
     font-style: normal;
 }
 
+/* regular start*/
 .css-font-regular(@font-weight, @font-size) {
     font-weight: @font-weight;
     font-size: @font-size;
@@ -34,14 +36,21 @@
     .css-font-regular(@css-font-weight-regular, @css-font-size-m);
 }
 
+.css-font-regular-large() {
+    .css-font-default();
+    .css-font-regular(@css-font-weight-regular, @css-font-size-l);
+}
+/* regular end*/
+
+
 .css-font-medium-xsmall() {
     .css-font-default();
     .css-font-regular(@css-font-weight-medium, @css-font-size-xs);
 }
 
-.css-font-bold-large() {
+.css-font-bold-xlarge() {
     .css-font-default();
-    .css-font-regular(@css-font-weight-bold, @css-font-size-l);
+    .css-font-regular(@css-font-weight-bold, @css-font-size-xl);
 }
 
 .css-font-very-bold-xxsmall() {

@@ -34,7 +34,7 @@ function createImageItem(data) {
 }
 
 function callFunction() {    
-    if(getDocumentHeight() - window.pageYOffset <= document.documentElement.clientWidth - 300) {
+    if(getDocumentHeight() - window.pageYOffset - document.documentElement.clientWidth <= 100) {
         let controller = new AbortController();
 
         fetch('./data.json', {signal: controller.signal})
