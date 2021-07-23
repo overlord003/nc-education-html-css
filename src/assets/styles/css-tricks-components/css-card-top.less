@@ -1,0 +1,20 @@
+.css-card-top {
+    position: relative;
+
+    &::after {
+        pointer-events: none;
+        content: "";
+        background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+        mix-blend-mode: screen;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // z-index: 2;
+
+        height: 250px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        // display: block;
+    }
+}
