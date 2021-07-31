@@ -292,8 +292,8 @@
                     </div>
                 </div>
             </div>
-            <div class="yandex-desktop-notifications__block yandex-notification-block">
-                <div class="yandex-notification-block__card yandex-card animated-block">
+            <div class="yandex-desktop-notifications__block yandex-notification-block _animated">
+                <div class="yandex-notification-block__card yandex-card yandex-animated-block">
                     <div class="yandex-card__title user">
                         <a class="yandex-user__link yandex-link _bold" href="#" target="_blank">Москва</a>    
                     </div>
@@ -317,22 +317,8 @@
         <!-- endinject -->
     </div>
 
-    <script src="./main.js"></script>
-
-    <script>
-        let btn = document.querySelector('.close-button');
-        let block = document.querySelector('.animated-block');
-
-        block.addEventListener('click', () => {
-            block.classList.add('_moved');
-            btn.classList.add('_censored');
-        });
-
-        btn.addEventListener('click', () => {
-            block.classList.remove('_moved')
-            btn.classList.remove('_censored');
-        });
-    </script>
+    <script src="./yandex-zen-script.js"></script>
+    <script src="./yandex-zen-animation.js" type="text/javascript"></script>
 
 </body>
 </html>

@@ -2,15 +2,11 @@
     width: 24px;
     height: 24px;
 
+    cursor: pointer;
+
     display: none;
 
-    .yandex-notification-block:hover & {
-        &._censored {
-            display: inline;
-            transition: display .1s ease-out;
-            transition-delay: .15s;
-
-            cursor: pointer;
-        }
+    &._active {
+        display: block;
     }
 }
